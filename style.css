@@ -10,11 +10,32 @@ body {
     padding: 20px;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: calc(100% - 200px); /* Adjust based on side-nav width */
+    margin-left: 300px; /* Adjust based on side-nav width */
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container h1 {
+    order: -1; /* Makes h1 appear before p */
+  }
+  
+
+
+
+
 header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-    text-align: center;
+    text-align: left;
 }
 
 .side-nav {
@@ -26,6 +47,7 @@ header {
     width: 200px; /* Adjust width as needed */
     height: 100%; /* Extend to full height */
     padding: 20px;
+    z-index: 1000; /* Ensure the side nav is above other content */
 }
 
 .side-nav ul {
@@ -71,4 +93,5 @@ header {
     .menu-open .side-nav {
         display: block;
     }
+    
 }
