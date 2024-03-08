@@ -12,14 +12,14 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between; /* Adjust alignment as needed */
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: space-between;
+    max-width: calc(100% - 200px); /* Adjust based on side-nav width */
+    margin-left: 300px; /* Adjust based on side-nav width */
     padding: 20px;
 }
 
 #left, #right {
-    width: calc(50% - 10px); /* Adjust the width as needed */
+    width: 50%; /* Adjust the width as needed */
 }
 
 
@@ -40,6 +40,7 @@ header {
     width: 200px; /* Adjust width as needed */
     height: 100%; /* Extend to full height */
     padding: 20px;
+    z-index: 1000; /* Ensure the side nav is above other content */
 }
 
 .side-nav ul {
