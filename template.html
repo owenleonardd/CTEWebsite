@@ -5,7 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="subpage.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script src = "https://cdn.tailwindcss.com"></script> 
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+                },
+                colors: {
+                    clifford: '#da373d',
+                }
+            }
+          }
+        }
+    </script>
 </head>
 
 <body>
