@@ -1,70 +1,70 @@
-animation:
+Animation:
     what: Animation is the process of taking 3D models or drawings to create an illusion of sequential movement, usually taking 25-50 frames per secona to create a smoot, seamless motion. Industries that heavily use animation include film and TV, video game development, architecture, engineering, manufacturing and healthcare
     connects: De Anza College (AA) <br>Foothill College (AA) <br>Fresno, Fullerton, Long <br>Beach, San Jose <br>UCLA <br>CA College of the Arts <br>Lovola Marymount
     whatdo: 3D modelers build 3D objects and environments that are based on sketches or real-world objects using specialized computer software. Animators take 3D objects and bring them to life, giving them movement and animation using computer-generated imagery (CGI) software.</p>
     jobs: 3D Modeler <br>Animator <br>Concept Artist <br>Game Designer <br>Graphic Designer <br>Illustrator <br>Multi-Media Artist <br>Production Designer</p>
 ~
-architecture:
+Architecture:
     what: Architectural design is the process of creating and designing plans for a residential home, building, office, structure, or landscape. It involves gathering important information on the needs, style, and wants for the project, and then crafting design options for the client or architect to review. Architectural design delivers blueprints for the construction team that will eventually build the project.</p>
     connects: Chabot College (AA) <br>City College of San Fran. <br>College of San Mateo (AA) <br>West Valley College (AA) <br>UC Berkeley <br>UCLA <br>Academy of Art Univ. <br>Cal Poly <br>Southern CA Institute of Architecture</p>
     whatdo: Architects create plans, drawings, and layouts for homes, buildings, and landscapes. They will meet with clients to discuss the project requirements and budget, as well as drafting layouts that reflect their client's needs and personality. Architectural designers work with CAD software to create blueprint designs, including technical specs that comply with local building regulations.</p>
     jobs: Architect <br>Architectural Designer <br>Architectural Drafter <br>Civil Drafter <br>Civil Engineer <br>Drafting Technician <br>Landscape Architect <br>Structural Drafter <br>Urban Planner</p>
 ~
-arts: 
+Design and Media Arts: 
     what: sgjbdsojbnsdojvb dsovb
     connects: ahvousbvoidshn
     whatdo: sdbsbsbsbdsb
     jobs: dfsdb
 ~
-business: 
+Business: 
     what:
     connects:
     whatdo:
     jobs:
 ~
-engineering: 
+Engineering: 
     what:
     connects:
     whatdo:
     jobs:
 ~
-film: 
+Film and Video Production: 
     what:
     connects:
     whatdo:
     jobs:
 ~
-games: 
+Games and Simulation:
     what:
     connects:
     whatdo:
     jobs:   
 ~
-graphics: 
+Graphic Design: 
     what:
     connects:
     whatdo:
     jobs:
 ~
-health: 
+Health: 
     what:
     connects:
     whatdo:
     jobs:
 ~
-hospitality: 
+Hospitality: 
     what:
     connects:
     whatdo:
     jobs:
 ~
-manufacturing: 
+Manufacturing: 
     what:
     connects:
     whatdo:
     jobs:
 ~
-software: 
+Software Development: 
     what:
     connects:
     whatdo:

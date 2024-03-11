@@ -1,40 +1,43 @@
 // Function to parse the information from the file
-async function parseInfoFile(filename) {
-    let response = await fetch(filename);
-    let data = await response.text();
+function parseInfoFile(filename) {
+    return fetch(filename)
+        .then(response => response.text())
+        .then(data => {
+            let entries = data.split('~'); // Splitting the data into entries based on double newlines
 
-    let entries = data.split('~'); // Splitting the data into entries based on double newlines
+            let map = {};
 
-    let infoMap = {};
+            // Looping through each entry and extracting key-value pairs
+            entries.forEach(entry => {
+                let lines = entry.trim().split('\n');
+                let key = lines.shift().trim(); // First line is the key (class name)
+                let values = lines.map(line => line.split(":")[1].trim()); // Rest of the lines are values
 
-    // Looping through each entry and extracting key-value pairs
-    entries.forEach(entry => {
-        let lines = entry.trim().split('\n');
-        let key = lines.shift().trim(); // First line is the key (class name)
-        let values = lines.map(line => line.split(":")[1].trim()); // Rest of the lines are values
+                // Storing the values in the hashmap
+                map[key] = values;
+            });
 
-        // Storing the values in the hashmap
-        infoMap[key] = values;
-    });
-
-    return infoMap;
+            return map;
+        });
 }
+
 
 // Function to fetch data from infoMap and populate <p> tags
 async function displayInfo(keyName) {
     try {
         const parsedInfo = await parseInfoFile('info.txt');
-
+        console.log(parsedInfo);
         // Get data based on the specified key
-        const info = parsedInfo[keyName];
+        const info = parsedInfo[keyName + ":"];
 
         // Update the <p> tags with the fetched data
         if (info) {
             const leftContent = document.getElementById('left-content');
             const rightContent = document.getElementById('right-content');
 
-            leftContent.innerHTML = `<p>${info[0]}</p><p>${info[1]}</p>`;
-            rightContent.innerHTML = `<p>${info[2]}</p><p>${info[3]}</p>`;
+            leftContent.innerHTML = `<h2>${leftContent.querySelector('h2').innerHTML}</h2><p>${info[0]}</p><h2>${leftContent.querySelector('h2').innerHTML}</h2><p>${info[1]}</p>`;
+            rightContent.innerHTML = `<h2>${rightContent.querySelector('h2').innerHTML}</h2><p>${info[2]}</p><h2>${rightContent.querySelector('h2').innerHTML}</h2><p>${info[3]}</p>`;
+
         } else {
             console.error('Error: Information not found for key:', keyName);
         }
