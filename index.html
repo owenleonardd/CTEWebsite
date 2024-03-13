@@ -4,65 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>CTE Pathways</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <script src = "https://cdn.tailwindcss.com"></script> 
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-                fontFamily: {
-                    sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-                },
-                colors: {
-                    clifford: '#da373d',
-                }
-            }
-          }
-        }
-    </script>
 </head>
 
-<body>
+<body class="font-sans antialiased bg-gray-100">
+    <div class="container mx-auto flex">
+        <nav class="w-1/4 py-8">
+            <ul class="space-y-4">
+                <li><a href="pathways.html" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Home</a></li>
+                <li><a href="pathways.html" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Animation</a></li>
+                <li><a href="pathways.html" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Design and Media Arts</a></li>
+                <li><a href="pathways.html" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Graphic Design</a></li>
+                <li><a href="pathways.html" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Film and Video Production</a></li>
+                <li><a href="pathways.html" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Business</a></li>
+                <li><a href="pathways.html" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Architecture</a></li>
+                <li><a href="pathways.html" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Engineering</a></li>
+                <li><a href="pathways.html" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Health</a></li>
+                <li><a href="pathways.html" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Hospitality</a></li>
+                <li><a href="pathways.html" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Games and Simulation</a></li>
+                <li><a href="pathways.html" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Software Development</a></li>
+                <li><a href="pathways.html" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Manufacturing</a></li>
+            </ul>
+        </nav>
 
-    <header>
-        <div class="container">
-            <h1>Home</h1>
-            <div class="menu-icon" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+        <div class="w-3/4 px-8 py-8">
+            <h1 class="text-3xl font-semibold mb-8">CTE Pathways</h1>
+            <div class="grid grid-cols-1 gap-8">
+                <div id="top-content" class="border rounded-lg p-4 bg-white">
+                    <h2 class="text-xl font-semibold mb-4">Welcome to CTE Pathways</h2>
+                    <p>This is the homepage content.</p>
+                </div>
+                <div id="bottom-content" class="border rounded-lg p-4 bg-white">
+                    <h2 class="text-xl font-semibold mb-4">Learn more about Career and Technical Education</h2>
+                    <p>Content here</p>
+                </div>
             </div>
         </div>
-    </header>
-
-    <nav class="side-nav">
-        <ul>
-            <li><a href="template.html">Home</a></li>
-            <li><a href="animation.html">Animation</a></li>
-            <li><a href="arts.html">Design and Media Arts</a></li>
-            <li><a href="graphics.html">Graphic Design</a></li>
-            <li><a href="film.html">Film and Video Production</a></li>
-            <li><a href="business.html">Business</a></li>
-            <li><a href="architecture.html">Architecture</a></li>
-            <li><a href="engineering.html">Engineering</a></li>
-            <li><a href="health.html">Health</a></li>
-            <li><a href="hospitality.html">Hospitality</a></li>
-            <li><a href="games.html">Games and Simulation</a></li>
-            <li><a href="software.html">Software Development</a></li>
-            <li><a href="manufacturing.html">Manufacturing</a></li>
-        </ul>
-    </nav>
-
-    <div class="container">
-        <h2>WHAT IS CTE?</h2>
-        <p>Career Technical Education classes give students an opportunity to explore specific career pathways while discovering the real-world application of the knowledge and skills learned in core subjects. Career Technical Education classes also deeply expose students in practical skills, problem solving, creativity, and team building. These "soft" skills are the skills the current job market and industry demands of future applicants to be competitive in today's global workplace. In Career Technical Education classes, students use math to design buildings, build sets, build robots, and create code. They use artistic skills to prepare meals, design cities, create graphics, web designs and presentations from films to theater productions.  They use reading and writing skills to produce multimedia publications, evaluate architectural styles, and develop storylines for student-produced videos. They use science to solve ecological problems and plan sustainable cities and resources of the future. They study history, and use what we have learned from our past, to plan for our future.  Career and Technical Education classes are the future. One size does not fit all, and we have to answer the demand of our community and industry to produce the job force that is needed in the 21st century. While many of our Career Technical Education programs may provide students options for entry level employment, most students complete Career Technical Education courses with an understanding of the next steps they need to take on their career paths, whether it is continuing on to college for a degree or job-related certificate or applying to local apprenticeship programs where they can master a craft as they earn a living.</p>
-
     </div>
-
-    <script src="script.js"></script>
-
-
 </body>
 
 </html>

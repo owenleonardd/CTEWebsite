@@ -37,10 +37,10 @@ async function displayInfo(keyName) {
             const bottomLeftContent = document.getElementById('bottom-left-content');
             const bottomRightContent = document.getElementById('bottom-right-content');
 
-            topLeftContent.innerHTML = `<h2 class="text-2xl font-bold">${topLeftContent.querySelector('h2').innerHTML}</h2><p>${info[0]}</p>`;
-            bottomLeftContent.innerHTML = `<h2 class="text-2xl font-bold">${bottomLeftContent.querySelector('h2').innerHTML}</h2><p>${info[1]}</p>`;
-            topRightContent.innerHTML = `<h2 class="text-2xl font-bold">${topRightContent.querySelector('h2').innerHTML}</h2><p>${info[2]}</p>`;
-            bottomRightContent.innerHTML = `<h2 class="text-2xl font-bold">${bottomRightContent.querySelector('h2').innerHTML}</h2><p>${info[3]}</p>`;
+            topLeftContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${topLeftContent.querySelector('h2').innerHTML}</h2><p>${info[0]}</p>`;
+            bottomLeftContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${bottomLeftContent.querySelector('h2').innerHTML}</h2><p>${info[1]}</p>`;
+            topRightContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${topRightContent.querySelector('h2').innerHTML}</h2><p>${info[2]}</p>`;
+            bottomRightContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${bottomRightContent.querySelector('h2').innerHTML}</h2><p>${info[3]}</p>`;
 
         } else {
             console.error('Error: Information not found for key:', keyName);

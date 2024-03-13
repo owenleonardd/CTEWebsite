@@ -29,43 +29,43 @@ Engineering:
     jobs: Biomedical Engineer or <br>Technician <br>Computer Engineer <br>Electrical Engineer or <br>Technician <br>Electro- Mechanical <br>Technician <br>Industrial Engineer or <br>Technician <br>Materials Engineer <br>Mechanical Engineer or <br>Technician <br>Robotics Engineer <br>Robotics Procrammer
 ~
 Film and Video Production: 
-    what:
-    connects:
-    whatdo:
-    jobs:
+    what: Film and video production is the process of making a film, from the initial idea and storyline, to screenwriting, shooting film, sound recording, and post-production editing. Films today appear not only in theaters, but broadcast TV, cable, streaming services, and multiple internet platforms like You'Tube. While it's easier than ever today to make a film with available technology, there are techniques and skills that are still required to achieve high quality production.
+    connects: De Anza College (AA)<br> Foothill College (AA)<br> San Francisco State<br> Los Angeles mine,<br> Barbara, Santa Cruz<br> CA Institute of the Arts<br> Stanford<br> TISCH
+    whatdo: Film directors are in charge of making, leading, and developing a film production, including funding, screenwriting, casting, film locations, filming, editing, and distribution. Camera operators are responsible for managing camera equipment and filming the scenes. Film editors organize digital footage with software to create the final film production.
+    jobs: Audio and Video Technician<br> Assistant Camera Operator, TV, Video, and Film<br> Producer<br> Multimedia Artist and/or Animator<br> Film and Video Editor<br> Cinematographer<br> Casting Agent<br> Location Manager<br> Broadcast Technician<br> Special Effects Coordinator<br> Director<br> Boom Operator
 ~
 Games and Simulation:
-    what:
-    connects:
-    whatdo:
-    jobs:   
+    what:Game design is the use of creativity and design to develop video games for entertainment or educational purposes. It involves creating compelling stories, characters, environments, rules, and challenges that drive interactions with other characters, users or objects. Game design crosses the fields of computer programming, creative writing, graphic design and animation.
+    connects: Cabrillo College (AA)<br/>CAL State - Chico, East Bay<br/>Los Angeles, Keley, Crime, Los Academy of Art Univ., SF Univ. of Silicon Valley TISC
+    whatdo: Game designers are the creative force responsible for bringing a video game to life. They design the characters in the game, assist with the storyline and goals for the game, create the "world" or environment where the game takes place, and create goals that users must achieve to make the game more engaging.
+    jobs: 3D Modeler<br/>Animator<br/>Film Editor<br/>Game Artist<br/>Game Writer and Developer<br/>Graphic Designer<br/>Illustrator<br/>Interface Designer Producer<br/>Software Programmer
 ~
 Graphic Design: 
-    what:
-    connects:
-    whatdo:
-    jobs:
+    what: Media arts can help you take yourcreative talent, combine it with skills and technology, and turn you in to an in demand multimedia or graphic designer. Multimedia design involves computers, animation, photography, video, and printing to create all sorts of things from posters and magazines, to websites and online video games, to photos and videos.
+    connects: De Anza College (AA) <br> Foothill College (AA) <br> Porterville College (AA) <br> San Jose State Art Center of College and Design <br> New York University <br> Univ. of the Pacific <br>
+    whatdo: Graphic designers typically work for an entertainment, video game, or advertising agency, or "in-house" at a traditional business, or even free-lance working on their own. Animators create visuals for computer programs or games. If you work in a marketing department you might design artwork and campaigns for presentations or marketing materials. Graphic designers will be fluent in computer skills such as Adobe or HTML to help create online content and websites.
+    jobs: 2D & 3D Animator<br> Creative Director<br> Desktop Publisher<br> Digital Media Designer<br> Filmmaker<br> Graphic Designer<br> Marketing Specialist<br> Photographer<br> Social Media Specialist
 ~
 Health: 
-    what:
-    connects:
-    whatdo:
-    jobs:
+    what: Mental health focuses on a person's state of mind, referring to one's emotional, social, and psychological wellness. Behavioral health often includes mental health, but also refers to how daily cognitive habits affect one's overall well-being, emotions, body, and behavior. Poor behavioral health habits, such as lack of sleep or eating disorders, often lead to poor mental and physical wellness.
+    connects: Chabot College (AA)<br/>De Anza College (AA)<br/>Foothill College (AA)<br/>MiraCosta College (AA)<br/>CAL State - Fullerton, San Jose<br/>Cal Poly Pomona<br/>California Baptist Univ.<br/>Palo Alto Univ.<br/>Southern New Hampshire Univ.<br/>USC
+    whatdo: Psychologists conduct interviews and assessments with their patients, give diagnostic tests, perform therapy, and administer programs to help patients with their mental health issues. Behavioral therapists strive to understand the underlying habits and behaviors of their patients, and create personalized strategies to eliminate poor behaviors at the root of the problem.
+    jobs: Behavioral Health Specialist<br/>Marriage and Family Therapist<br/>Mental Health Nurse<br/>Psychiatric Technician<br/>Psychiatrist<br/>Psychologist<br/>Social Worker<br/>Substance Abuse Counselor
 ~
 Hospitality: 
-    what:
-    connects:
-    whatdo:
-    jobs:
+    what: Culinary arts is the preparation, cooking, and presentation of food and meals. You will usually work in restaurants, most likely as a cook or chef in the kitchen, but also in "front of the house" roles as a server, greeter, or maitre d. Catering for private events is a big business that involves preparing food for large events like weddings, conventions, or corporate meetings.
+    connects: Cabrillo College (AA)<br/>City College of San Fran. (AA)<br/>College of the Canyons (AA)<br/>Los Angeles Trade-Tech College (AA)<br/>Mission College (AA)<br/>Orange Coast College (AA)<br/>Santa Rosa Jr. College (AA)<br/>Cal State - East Bay, Long Beach, San Diego, San Fran., San Jose<br/>Cal Poly<br/>Culinary Institute of America at Greystone<br/>Institute of Culinary Education
+    whatdo: As a cook or chef you will plan menus, prepare food to be used for meals, cook and bake meals, and prepare the final presentation for the customer. Servers and hosts greet customers, take their orders, serve their food, and deliver great customer service. Nutritionists develop meal plans and menus that focus on improving diet and nutrition for their customers.
+    jobs: Caterer<br/>Chef and Head Cook<br/>Dietician Technician<br/>Food Scientist<br/>Food Service Worker<br/>Meeting, Convention, and Event Planner<br/>Manager - Hotel, Club, or Resort<br/>Registionis Dietitian & Nutritionist
 ~
 Manufacturing: 
-    what:
-    connects:
-    whatdo:
-    jobs:
+    what: Product innovation and design refers to the development of new products or improvements in the design, components, or manufacturing process of existing products. Product innovation can create brand new categories, like the invention of smart phones, or iterate on established products like using lighter, more durable materials in products.
+    connects: City College of San Fran. (AA)<br/>San Diego City College (AA)<br/>Solano Community College (AA)<br/>CAL State - Fullerton, Long Beach, San Fran., San Jose<br/>Cal Poly California College of the Arts<br/>Otis College of Art and Design<br/>Stanford
+    whatdo: Product designers work to understand the needs of customers by observing user behavior and conducting market research in order to solve problems in the marketplace. They use computer-aided design (CAD) software to build renderings of new products and produce various prototypes to test, analyze, and iterate upon.
+    jobs: 3D Modeler<br/>Industrial Designer<br/>Materials Engineer<br/>Mechanical Drafter<br/>Mechanical Engineering Technician<br/>Product Designer Product Manager<br/>UX (User Experience) Designer
 ~
 Software Development: 
-    what:
-    connects:
-    whatdo:
-    jobs:
+    what: Software development refers to using computer code to create, design, deploy and support computer software. Computer software applications range from productivity software to create documents, gaming software to play video games, and video conferencing software to stay connected at school. Computer systems refer to the hardware, software, and networking systems that an organization uses to generate information and be productive.
+    connects: De Anza College (AA)<br/>Foothill College (AA)<br/>CAL State - Sacramento, San Diego, San Jose<br/>UC - Berkeley, Irvine, Merced<br/>Cal Poly<br/>Harvard<br/>MIT<br/>Santa Clara Univ.<br/>Stanford
+    whatdo: Software development refers to using computer code to create, design, deploy and support computer software. Computer software applications range from productivity software to create documents, gaming software to play video games, and video conferencing software to stay connected at school. Computer systems refer to the hardware, software, and networking systems that an organization uses to generate information and be productive.
+    jobs: Computer and Information Systems Manager<br/>Computer Network Architect<br/>Computer Network Support Specialist<br/>Computer Systems Analyst<br/>Information Security Analyst<br/>Network and Computer Systems Administrator<br/>Software Developer<br/>Systems Administrator<br/>Web Developer
