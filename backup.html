@@ -5,35 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTE Pathways</title>
-
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <script src = "https://cdn.tailwindcss.com"></script> 
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-                fontFamily: {
-                    sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-                },
-                colors: {
-                    clifford: '#da373d',
-                }
-            }
-          }
-        }
-    </script>
 </head>
 
-
 <body>
-    <div class="grid grid-cols-12 grid-rows-12 gap-x-4 ">
-        <div class="col-span-12 row-span-2 bg-gray-800">
-            <h1 class="text-4xl text-left text-white">CTE Pathways</h1> 
+
+    <div class="grid grid-cols-4 grid-rows-4">
+        <div>
+        <header class="bg-gray-800 text-white col-span-4 row-span-3">
+            <h1 class="text-3xl font-bold bg-gray-800">CTE Pathways</h1>
+        </header>
         </div>
-        <div class="bg-gray-800 col-span-2 row-span-10 row-start-3">
+        <div>
             <nav class="bg-gray-800">
-                <ul class="list-none">
+                <ul class="">
                     <li><a href="#" onclick="displayInfo('Home')" class="block py-2 px-4 text-white hover:bg-gray-700">Home</a></li>
                     <li><a href="#" onclick="displayInfo('Animation')" class="block py-2 px-4 text-white hover:bg-gray-700">Animation</a></li>
                     <li><a href="#" onclick="displayInfo('Design and Media Arts')" class="block py-2 px-4 text-white hover:bg-gray-700">Design and Media Arts</a></li>
@@ -49,40 +34,27 @@
                     <li><a href="#" onclick="displayInfo('Manufacturing')" class="block py-2 px-4 text-white hover:bg-gray-700">Manufacturing</a></li>
                 </ul>
             </nav>
-            
         </div>
-        <div class="col-span-5 row-span-4 col-start-3 row-start-3">
-            <div id="top-left-content">
-                <h2 class = "text-2xl font-bold">What is it?</h2>
-                <p>content here</p>
-            </div>
+        <div class = "" id="top-left-content">
+            <h2 class="text-2xl font-bold">What is it?</h2>
+            <p class="">This is the "What is it?" content.</p>
         </div>
-        <div class="col-span-5 row-span-4 col-start-8 row-start-3">
-            <div id="top-right-content">
-                <h2 class = "text-2xl font-bold">What will I do?</h2>
-                <p>content here</p>
-            </div>
+        <div class = "" id="top-right-content">
+            <h2 class="text-2xl font-bold">What will I do?</h2>
+            <p class="">This is the "What will I do?" content.</p>
         </div>
-        <div class="col-span-5 row-span-4 col-start-3 row-start-7">
-            <div id="bottom-left-content">
-                <h2 class = "text-2xl font-bold">Colleges it connects to</h2>
-                <p>content here</p>
-            </div>
+        <div class = "" id="bottom-left-content">    
+            <h2 class="text-2xl font-bold">Connects to Programs</h2>
+            <p class="">This is the "Connects to Programs" content.</p>
         </div>
-        <div class="col-span-5 row-span-4 col-start-8 row-start-7">
-            <div id="bottom-right-content">
-                <h2 class = "text-2xl font-bold">Jobs it connects to</h2>
-                <p>content here</p>
-            </div>
+        <div class = "" id="bottom-right-content">
+            <h2 class="text-2xl font-bold">Leads to these jobs</h2>
+            <p class="">This is the "Leads to these jobs" content.</p>
         </div>
-</div>
+        
+    </div>
     
-</body>
-
-
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

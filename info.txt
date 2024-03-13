@@ -1,32 +1,32 @@
 Animation:
     what: Animation is the process of taking 3D models or drawings to create an illusion of sequential movement, usually taking 25-50 frames per secona to create a smoot, seamless motion. Industries that heavily use animation include film and TV, video game development, architecture, engineering, manufacturing and healthcare
     connects: De Anza College (AA) <br>Foothill College (AA) <br>Fresno, Fullerton, Long <br>Beach, San Jose <br>UCLA <br>CA College of the Arts <br>Lovola Marymount
-    whatdo: 3D modelers build 3D objects and environments that are based on sketches or real-world objects using specialized computer software. Animators take 3D objects and bring them to life, giving them movement and animation using computer-generated imagery (CGI) software.</p>
-    jobs: 3D Modeler <br>Animator <br>Concept Artist <br>Game Designer <br>Graphic Designer <br>Illustrator <br>Multi-Media Artist <br>Production Designer</p>
+    whatdo: 3D modelers build 3D objects and environments that are based on sketches or real-world objects using specialized computer software. Animators take 3D objects and bring them to life, giving them movement and animation using computer-generated imagery (CGI) software.
+    jobs: 3D Modeler <br>Animator <br>Concept Artist <br>Game Designer <br>Graphic Designer <br>Illustrator <br>Multi-Media Artist <br>Production Designer
 ~
 Architecture:
-    what: Architectural design is the process of creating and designing plans for a residential home, building, office, structure, or landscape. It involves gathering important information on the needs, style, and wants for the project, and then crafting design options for the client or architect to review. Architectural design delivers blueprints for the construction team that will eventually build the project.</p>
-    connects: Chabot College (AA) <br>City College of San Fran. <br>College of San Mateo (AA) <br>West Valley College (AA) <br>UC Berkeley <br>UCLA <br>Academy of Art Univ. <br>Cal Poly <br>Southern CA Institute of Architecture</p>
-    whatdo: Architects create plans, drawings, and layouts for homes, buildings, and landscapes. They will meet with clients to discuss the project requirements and budget, as well as drafting layouts that reflect their client's needs and personality. Architectural designers work with CAD software to create blueprint designs, including technical specs that comply with local building regulations.</p>
-    jobs: Architect <br>Architectural Designer <br>Architectural Drafter <br>Civil Drafter <br>Civil Engineer <br>Drafting Technician <br>Landscape Architect <br>Structural Drafter <br>Urban Planner</p>
+    what: Architectural design is the process of creating and designing plans for a residential home, building, office, structure, or landscape. It involves gathering important information on the needs, style, and wants for the project, and then crafting design options for the client or architect to review. Architectural design delivers blueprints for the construction team that will eventually build the project.
+    connects: Chabot College (AA) <br>City College of San Fran. <br>College of San Mateo (AA) <br>West Valley College (AA) <br>UC Berkeley <br>UCLA <br>Academy of Art Univ. <br>Cal Poly <br>Southern CA Institute of Architecture
+    whatdo: Architects create plans, drawings, and layouts for homes, buildings, and landscapes. They will meet with clients to discuss the project requirements and budget, as well as drafting layouts that reflect their client's needs and personality. Architectural designers work with CAD software to create blueprint designs, including technical specs that comply with local building regulations.
+    jobs: Architect <br>Architectural Designer <br>Architectural Drafter <br>Civil Drafter <br>Civil Engineer <br>Drafting Technician <br>Landscape Architect <br>Structural Drafter <br>Urban Planner
 ~
 Design and Media Arts: 
-    what: sgjbdsojbnsdojvb dsovb
-    connects: ahvousbvoidshn
-    whatdo: sdbsbsbsbdsb
-    jobs: dfsdb
+    what: Design, visual and media arts can help you take your creative talent, combine it with skills and technology, and turn you in to an in-demand multimedia or graphic designer. Multimedia design involves computers, animation, photography, video and printing, creating all sorts of things from posters and magazines, to websites and online video games, to photos and videos.
+    connects: De Anza College (AA) <br> Foothill College (AA) <br> Fullerton State <br> UC Irvine <br> UCLA <br> UC San Diego
+    whatdo: Design, visual and media arts professionals work in the entertainment, video game, or advertising industries, or "in-house" at a traditional business. Animators create visuals for computer programs or games. Marketing departments design artwork and campaigns for presentations or marketing materials. Graphic designers create designs for print, video, and online applications.
+    jobs: 2D & 3D Animator <br> Creative Director <br> Desktop Publisher <br> Digital Media Designer <br> Filmmaker <br> Graphic Designer <br> Marketing Specialist <br> Photographer <br> Social Media Manager
 ~
 Business: 
-    what:
-    connects:
-    whatdo:
-    jobs:
+    what: Business management involves managing the day-to-day operations of business organizations, whether managing the company as an owner, executive or general manager, overseeing administration as an operations manager, or helping to support the business as an administrative assistant or receptionist.
+    connects: De Anza College (AA)<br>Foothill College (AA)<br>CAL State - San Diego, San Francisco, San Jose<br>UCLA<br>Cornell<br>Harvard<br>Tiniv of Penn
+    whatdo: Managers and owners oversee day-to-day business operations, decide what products to make, and increase productivity of their business. Accountants and bookkeepers track invoices, payments, and revenue. Human resource and training professionals help employees find their full potential. Market research analysts gather and analyze data on clients and the marketplace.
+    jobs: Administrative Support<br>Business Intelligence<br>Management<br>Executive / Owner<br>General Manager<br>Human Resources<br>Specialist<br>Operations Management<br>Training Supervisor
 ~
 Engineering: 
-    what:
-    connects:
-    whatdo:
-    jobs:
+    what: Engineering design is the process of creating a plan that will be used to build or make something, whether a small electronic device, a vacuum cleaner, or a machine that makes parts. The engineering design process involves multiple teams that work in tandem with one another, iterating and testing the process over- and-over, delivering a final process, solution, or prototype to be built or executed based on what's needed.
+    connects: El Camino College (AA) <br>Foothill College (AA) <br>Corsiate, She Diego <br>Ang Berkeley, Davis, Los <br>Cal Maritime <br>Cal Poly <br>MIT <br>Stanford <br>USC
+    whatdo: Engineers, engineering technicians, drafters, designers, and others work together through an iterative process that usually includes: defining the problem or what needs to be built; identifying possible constraints; brainstorming different possible solutions; prototyping the most promising solution; testing and evaluating; iterating to make improvements; and communicating and delivering the final solution or dian.
+    jobs: Biomedical Engineer or <br>Technician <br>Computer Engineer <br>Electrical Engineer or <br>Technician <br>Electro- Mechanical <br>Technician <br>Industrial Engineer or <br>Technician <br>Materials Engineer <br>Mechanical Engineer or <br>Technician <br>Robotics Engineer <br>Robotics Procrammer
 ~
 Film and Video Production: 
     what:
