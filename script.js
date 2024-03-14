@@ -1,34 +1,55 @@
 // Function to parse the information from the file
 function parseInfoFile(filename) {
-    return fetch(filename)
-        .then(response => response.text())
+    return fetch(filename) // Fetch the JSON file
+        .then(response => {
+            // Check if the response is successful
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            // Parse the JSON response
+            return response.json();
+        })
         .then(data => {
-            let entries = data.split('~'); // Splitting the data into entries based on double newlines
-
             let map = {};
 
-            // Looping through each entry and extracting key-value pairs
-            entries.forEach(entry => {
-                let lines = entry.trim().split('\n');
-                let key = lines.shift().trim(); // First line is the key (class name)
-                let values = lines.map(line => line.split(":")[1].trim()); // Rest of the lines are values
+            // Looping through each category in the JSON data
+            for (let category in data) {
+                if (data.hasOwnProperty(category)) {
+                    let info = data[category];
+                    let values = [];
 
-                // Storing the values in the hashmap
-                map[key] = values;
-            });
+                    // Extracting values from the info object
+                    for (let key in info) {
+                        if (info.hasOwnProperty(key)) {
+                            values.push(info[key]);
+                        }
+                    }
+
+                    // Storing the values in the hashmap
+                    map[category] = values;
+                }
+            }
 
             return map;
+        })
+        .catch(error => {
+            // Handle any errors
+            console.error('There was a problem parsing the data:', error);
         });
 }
+
+
 
 
 // Function to fetch data from infoMap and populate <p> tags
 async function displayInfo(keyName) {
     try {
-        const parsedInfo = await parseInfoFile('info.txt');
+        const parsedInfo = await parseInfoFile('info.json');
         console.log(parsedInfo);
+        console.log(keyName);
+        console.log(parsedInfo[keyName]);
         // Get data based on the specified key
-        const info = parsedInfo[keyName + ":"];
+        const info = parsedInfo[keyName];
 
         // Update the <p> tags with the fetched data
         if (info) {
