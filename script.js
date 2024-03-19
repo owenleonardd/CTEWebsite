@@ -52,17 +52,29 @@ async function displayInfo(keyName) {
         const info = parsedInfo[keyName];
 
         // Update the <p> tags with the fetched data
-        if (info) {
-            const topLeftContent = document.getElementById('top-left-content');
-            const topRightContent = document.getElementById('top-right-content');
-            const bottomLeftContent = document.getElementById('bottom-left-content');
-            const bottomRightContent = document.getElementById('bottom-right-content');
+        const topLeftContent = document.getElementById('top-left-content');
+        const topRightContent = document.getElementById('top-right-content');
+        const bottomLeftContent = document.getElementById('bottom-left-content');
+        const bottomRightContent = document.getElementById('bottom-right-content');
+        console.log(info.length);
+        if (info.length === 4) {
+            bottomLeftContent.style.display = "block";
+            bottomRightContent.style.display = "block";
+            topLeftContent.style.display = "block";
+            topRightContent.style.display = "block";
 
             topLeftContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${topLeftContent.querySelector('h2').innerHTML}</h2><p>${info[0]}</p>`;
             bottomLeftContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${bottomLeftContent.querySelector('h2').innerHTML}</h2><p>${info[1]}</p>`;
             topRightContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${topRightContent.querySelector('h2').innerHTML}</h2><p>${info[2]}</p>`;
             bottomRightContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${bottomRightContent.querySelector('h2').innerHTML}</h2><p>${info[3]}</p>`;
+        } else if (info.length == 2) {
+            topLeftContent.style.display = "block";
+            topRightContent.style.display = "none";
+            bottomLeftContent.style.display = "block";
+            bottomRightContent.style.display = "none";
 
+            topLeftContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${topLeftContent.querySelector('h2').innerHTML}</h2><p>${info[0]}</p>`;
+            bottomLeftContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${bottomLeftContent.querySelector('h2').innerHTML}</h2><p>${info[1]}</p>`;
         } else {
             console.error('Error: Information not found for key:', keyName);
         }
@@ -71,6 +83,4 @@ async function displayInfo(keyName) {
     }
 }
 
-// Call the displayInfo function with the specified key when the page loads
-// For example, if you want to display information for "Animation" initially:
-// displayInfo('Animation');
+displayInfo('Home');
