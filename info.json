@@ -1,5 +1,6 @@
 {
   "Home": {
+    "home":true,
     "welcome": "Career Technical Education (CTE) at MVLA provides career and workforce preparation for all students. Through CTE, high school students gain valuable career and technical education so they can:",
     "learn": "Learn about the different career pathways and the skills and education needed to get started."
   },

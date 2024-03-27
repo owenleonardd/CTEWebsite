@@ -1,83 +1,54 @@
-// Function to parse the information from the file
-function parseInfoFile(filename) {
-    return fetch(filename) // Fetch the JSON file
-        .then(response => {
-            // Check if the response is successful
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            // Parse the JSON response
-            return response.json();
-        })
-        .then(data => {
-            let map = {};
+let parsedInfo = null;
+const topLeftContent = document.getElementById('top-left-content');
+const topRightContent = document.getElementById('top-right-content');
+const bottomLeftContent = document.getElementById('bottom-left-content');
+const bottomRightContent = document.getElementById('bottom-right-content');
 
-            // Looping through each category in the JSON data
-            for (let category in data) {
-                if (data.hasOwnProperty(category)) {
-                    let info = data[category];
-                    let values = [];
-
-                    // Extracting values from the info object
-                    for (let key in info) {
-                        if (info.hasOwnProperty(key)) {
-                            values.push(info[key]);
-                        }
-                    }
-
-                    // Storing the values in the hashmap
-                    map[category] = values;
-                }
-            }
-
-            return map;
-        })
-        .catch(error => {
-            // Handle any errors
-            console.error('There was a problem parsing the data:', error);
-        });
+async function parseInfoFile(filename) {
+    try {
+        const response = await fetch(filename);
+        if (!response.ok) {
+            throw new Error('Failed to fetch data');
+        }
+        return await response.json();
+    } catch (error) {
+        console.error('Error parsing JSON file:', error);
+        return null;
+    }
 }
 
-
-
-
-// Function to fetch data from infoMap and populate <p> tags
 async function displayInfo(keyName) {
     try {
-        const parsedInfo = await parseInfoFile('info.json');
-        console.log(parsedInfo);
-        console.log(keyName);
-        console.log(parsedInfo[keyName]);
-        // Get data based on the specified key
-        const info = parsedInfo[keyName];
-
-        // Update the <p> tags with the fetched data
-        const topLeftContent = document.getElementById('top-left-content');
-        const topRightContent = document.getElementById('top-right-content');
-        const bottomLeftContent = document.getElementById('bottom-left-content');
-        const bottomRightContent = document.getElementById('bottom-right-content');
-        console.log(info.length);
-        if (info.length === 4) {
-            bottomLeftContent.style.display = "block";
-            bottomRightContent.style.display = "block";
-            topLeftContent.style.display = "block";
-            topRightContent.style.display = "block";
-
-            topLeftContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${topLeftContent.querySelector('h2').innerHTML}</h2><p>${info[0]}</p>`;
-            bottomLeftContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${bottomLeftContent.querySelector('h2').innerHTML}</h2><p>${info[1]}</p>`;
-            topRightContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${topRightContent.querySelector('h2').innerHTML}</h2><p>${info[2]}</p>`;
-            bottomRightContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${bottomRightContent.querySelector('h2').innerHTML}</h2><p>${info[3]}</p>`;
-        } else if (info.length == 2) {
-            topLeftContent.style.display = "block";
-            topRightContent.style.display = "none";
-            bottomLeftContent.style.display = "block";
-            bottomRightContent.style.display = "none";
-
-            topLeftContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${topLeftContent.querySelector('h2').innerHTML}</h2><p>${info[0]}</p>`;
-            bottomLeftContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${bottomLeftContent.querySelector('h2').innerHTML}</h2><p>${info[1]}</p>`;
-        } else {
-            console.error('Error: Information not found for key:', keyName);
+        parsedInfo = await parseInfoFile('info.json');
+        if (!parsedInfo) {
+            console.error('Error: Unable to fetch info data.');
+            return;
         }
+        
+        const { home, what, whatdo, connects, jobs, welcome, learn } = parsedInfo[keyName];
+        
+        const showHome = home === true;
+        topLeftContent.style.display = 'block';
+        topRightContent.style.display = showHome ? 'none' : 'block';
+        bottomLeftContent.style.display = 'block';
+        bottomRightContent.style.display = showHome ? 'none' : 'block';
+        topLeftContent.classList.toggle("col-span-2", showHome);
+        bottomLeftContent.classList.toggle("col-span-2", showHome);
+
+        topLeftContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${topLeftContent.querySelector('h2').innerHTML}</h2><p>${showHome ? welcome : what}</p>`;
+        bottomLeftContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${bottomLeftContent.querySelector('h2').innerHTML}</h2><p>${showHome ? learn : connects}</p>`;
+        topRightContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${topRightContent.querySelector('h2').innerHTML}</h2><p>${whatdo}</p>`;
+        bottomRightContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${bottomRightContent.querySelector('h2').innerHTML}</h2><p>${jobs}</p>`;
+
+        // Remove active class from all links
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => link.classList.remove('bg-gray-200', 'text-gray-900'));
+        
+        // Add active class to the clicked link
+        const clickedLink = document.querySelector(`nav a[href="#"][onclick="displayInfo('${keyName}')"`);
+        clickedLink.classList.add('bg-gray-200', 'text-gray-900');
+
+
     } catch (error) {
         console.error('Error:', error);
     }
