@@ -26,21 +26,26 @@ async function displayInfo(keyName) {
             return;
         }
         
-        const { type, what, whatdo, connects, jobs, welcome, learn } = parsedInfo[keyName];
+        const { type, what, whatdo, unique, connects, jobs, welcome, learn, images} = parsedInfo[keyName];
         
         const showHome = type === 'Home';
         topLeftContent.style.display = 'block';
-        topRightContent.style.display = showHome ? 'none' : 'block';
+        //topRightContent.style.display = showHome ? 'none' : 'block';
+        topRightContent.style.display = 'block';
         bottomLeftContent.style.display = 'block';
-        bottomRightContent.style.display = showHome ? 'none' : 'block';
+        //bottomRightContent.style.display = showHome ? 'none' : 'block';
+        bottomRightContent.style.display = 'block';
         topLeftContent.classList.toggle("col-span-2", showHome);
+        topRightContent.classList.toggle("col-span-2", showHome);
         bottomLeftContent.classList.toggle("col-span-2", showHome);
+        bottomRightContent.classList.toggle("col-span-2", showHome);
 
-        topLeftContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${topLeftContent.querySelector('h2').innerHTML}</h2><p>${showHome ? welcome : what}</p>`;
-        bottomLeftContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${bottomLeftContent.querySelector('h2').innerHTML}</h2><p>${showHome ? learn : connects}</p>`;
-        topRightContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${topRightContent.querySelector('h2').innerHTML}</h2><p>${whatdo}</p>`;
+        topLeftContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${topLeftContent.querySelector('h2').innerHTML}</h2><p>${what}</p>`;
+        topRightContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${topRightContent.querySelector('h2').innerHTML}</h2><p>${showHome ? unique : whatdo}</p>`;
+        bottomLeftContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${bottomLeftContent.querySelector('h2').innerHTML}</h2><p>${connects}</p>`;
         bottomRightContent.innerHTML = `<h2 class="text-xl font-semibold mb-4">${bottomRightContent.querySelector('h2').innerHTML}</h2><p>${jobs}</p>`;
-        title.innerHTML = keyName;
+        title.innerHTML = showHome ? "CTE Pathways" : keyName;
+
         // Remove active class from all links
         const navLinks = document.querySelectorAll('nav a');
         navLinks.forEach(link => link.classList.remove('bg-gray-200', 'text-gray-900'));
@@ -48,7 +53,6 @@ async function displayInfo(keyName) {
         // Add active class to the clicked link
         const clickedLink = document.querySelector(`nav a[href="#"][onclick="displayInfo('${keyName}')"`);
         clickedLink.classList.add('bg-gray-200', 'text-gray-900');
-
 
     } catch (error) {
         console.error('Error:', error);
