@@ -59,4 +59,13 @@ async function displayInfo(keyName) {
     }
 }
 
+function toggleCategory(categoryId) {
+    const category = document.getElementById(categoryId);
+    if (category.style.display === "none") {
+        category.style.display = "block";
+    } else {
+        category.style.display = "none";
+    }
+}
+
 displayInfo('Home');

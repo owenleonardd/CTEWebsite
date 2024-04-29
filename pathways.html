@@ -14,19 +14,30 @@
     <div class="container mx-auto flex">
         <nav class="w-1/4 py-8">
             <ul class="space-y-4">
-                <li><a href="#" onclick="displayInfo('Home')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Home</a></li>
-                <li><a href="#" onclick="displayInfo('Animation')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Animation</a></li>
-                <li><a href="#" onclick="displayInfo('Design and Media Arts')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Design and Media Arts</a></li>
-                <li><a href="#" onclick="displayInfo('Graphic Design')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Graphic Design</a></li>
-                <li><a href="#" onclick="displayInfo('Film and Video Production')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Film and Video Production</a></li>
-                <li><a href="#" onclick="displayInfo('Business')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Business</a></li>
-                <li><a href="#" onclick="displayInfo('Architecture')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Architecture</a></li>
-                <li><a href="#" onclick="displayInfo('Engineering')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Engineering</a></li>
-                <li><a href="#" onclick="displayInfo('Health')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Health</a></li>
-                <li><a href="#" onclick="displayInfo('Hospitality')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Hospitality</a></li>
-                <li><a href="#" onclick="displayInfo('Games and Simulation')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Games and Simulation</a></li>
-                <li><a href="#" onclick="displayInfo('Software Development')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Software Development</a></li>
-                <li><a href="#" onclick="displayInfo('Manufacturing')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Manufacturing</a></li>
+                <li>
+                    <li><a href="#" onclick="displayInfo('Home')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Home</a></li>
+                    <a href="#" onclick="toggleCategory('arts')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Arts</a>
+                    <ul id="arts" class="pl-4" style="display: none;">
+                        <li><a href="#" onclick="displayInfo('Animation')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Animation</a></li>
+                        <li><a href="#" onclick="displayInfo('Design and Media Arts')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Design and Media Arts</a></li>
+                        <li><a href="#" onclick="displayInfo('Graphic Design')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Graphic Design</a></li>
+                        <li><a href="#" onclick="displayInfo('Film and Video Production')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Film and Video Production</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleCategory('technology')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Technology</a>
+                    <ul id="technology" class="pl-4" style="display: none;">
+                        <li><a href="#" onclick="displayInfo('Software Development')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Software Development</a></li>
+                        <li><a href="#" onclick="displayInfo('Engineering')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Engineering</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleCategory('business')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Business</a>
+                    <ul id="business" class="pl-4" style="display: none;">
+                        <li><a href="#" onclick="displayInfo('Business')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">Business</a></li>
+                    </ul>
+                </li>
+                <!-- Add more categories as needed -->
             </ul>
         </nav>
 
