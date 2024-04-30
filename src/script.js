@@ -132,6 +132,8 @@ async function displayInfo(categoryName, keyName) {
 
         const info = parsedInfo[categoryName][keyName];
 
+        title.textContent = keyName.replace(/-/g, ' ');
+
         if ("Type" in info && info.Type === "Home") {
             displayHomePage();
         } else if ("Concentrator" in info && "Capstone" in info) {
