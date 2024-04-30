@@ -3,7 +3,18 @@
     "Type": "Home",
     "Description": "This is the home page."
   },
+  "About": {
+    "Type": "About",
+    "Description": "This is the about page.",
+    "Contact": {
+      "Description": "This is the contact page."
+    },
+    "FAQ": {
+      "Description": "This is the FAQ page."
+    }
+  },
   "Engineering Architecture": {
+    "Type": "Category",
     "Engineering Technology": {
       "Concentrator": {
         "name": "Engineering Technology I",
@@ -42,6 +53,7 @@
     }
   },
   "Information and Communication Technology": {
+    "Type": "Category",
     "Software and Systems Developer": {
       "Concentrator": {
         "name": "AP Computer Science",
@@ -80,6 +92,7 @@
     }
   },
   "Health Science and Medical Technology": {
+    "Type": "Category",
     "Patient Care": {
       "Concentrator": {
         "name": "Health Careers I",
@@ -100,6 +113,7 @@
     }
   },
   "Business and Finance": {
+    "Type": "Category",
     "Business Management": {
       "Concentrator": {
         "name": "Business Management I",
@@ -120,6 +134,7 @@
     }
   },
   "Arts Media and Entertainment": {
+    "Type": "Category",
     "Commercial Art": {
       "Concentrator": {
         "name": "Commercial Art I",
@@ -158,6 +173,7 @@
     }
   },
   "Work Experience Exploration": {
+    "Type": "Category",
     "Work Experience Exploration": {
       "Concentrator": {
         "name": "Work Experience Exploration",

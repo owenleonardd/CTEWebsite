@@ -39,10 +39,19 @@ async function generateSidebar() {
 
             // Populate the pathways list with pathway buttons
             Object.keys(pathways).forEach(pathway => {
-                const pathwayButton = document.createElement('li');
-                pathwayButton.innerHTML = `<a href="#" onclick="displayInfo('${category}','${pathway}')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">${replaceHyphensWithSpaces(pathway)}</a>`;
-                pathwaysList.appendChild(pathwayButton);
+                // Check if the value corresponding to the key is an object
+                if (typeof pathways[pathway] === 'object' && pathways[pathway] !== null) {
+                    const pathwayButton = document.createElement('li');
+                    pathwayButton.innerHTML = `<a href="#" onclick="displayInfo('${category}','${pathway}')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">${replaceHyphensWithSpaces(pathway)}</a>`;
+                    pathwaysList.appendChild(pathwayButton);
+                }
             });
+
+            //if there are no pathways added in the forEach loop above, remove the arrow unicode character
+            if (pathwaysList.children.length === 0) {
+                categoryButton.querySelector('.arrow-icon').innerHTML = '';
+            }
+            
 
             // Function to handle clicking on the arrow
             const arrowIcon = categoryButton.querySelector('.arrow-icon');
@@ -166,14 +175,17 @@ async function displayInfo(categoryName, keyName) {
         const info = parsedInfo[categoryName][keyName];
 
         title.textContent = keyName.replace(/-/g, ' ');
-
+        console.log("Info: ", info);
         if ("Type" in info && info.Type === "Home") {
             displayHomePage();
         } else if ("Concentrator" in info && "Capstone" in info) {
             displayPathwayInfo(info);
         } else if ("description" in info) {
             displayCourseInfo(info);
-        } else {
+        } else if (parsedInfo[categoryName].Type === "About") {
+            displayAboutPage();
+        }
+        else {
             console.error("Error: Invalid info object.");
         }
 
@@ -183,6 +195,7 @@ async function displayInfo(categoryName, keyName) {
         console.error('Error:', error);
     }
 }
+
 
 async function displayCategoryInfo(keyName) {//for displaying category page
     try {
@@ -254,6 +267,15 @@ function displayHomePage() {
     const content = `
         <div class="border rounded-lg p-4 bg-white">
             <p>It's the home page</p>
+        </div>
+    `;
+    displayContent(content);
+}
+
+function displayAboutPage() {
+    const content = `
+        <div class="border rounded-lg p-4 bg-white">
+            <p>It's the about page</p>
         </div>
     `;
     displayContent(content);
