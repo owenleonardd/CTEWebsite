@@ -277,4 +277,4 @@ function displayContent(content) {
 
 
 window.onload = generateSidebar();
-displayInfo('Home');
+displayCategoryInfo('Home');
