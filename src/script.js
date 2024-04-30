@@ -27,9 +27,9 @@ async function generateSidebar() {
 
             // Create the category button
             const categoryButton = document.createElement('button');
-            categoryButton.textContent = replaceHyphensWithSpaces(category);
             categoryButton.classList.add('block', 'px-4', 'py-2', 'rounded-lg', 'hover:bg-gray-200', 'mb-4', 'focus:outline-none', 'focus:bg-gray-200');
-            categoryButton.addEventListener('click', () => togglePathways(category, pathways));
+            categoryButton.innerHTML = `<span class="arrow-icon">&#9205;</span> ${replaceHyphensWithSpaces(category)}`;
+            categoryButton.addEventListener('click', () => callDifferentMethod(category, pathways));
             categoryContainer.appendChild(categoryButton);
 
             // Create the pathways list for the category
@@ -43,11 +43,44 @@ async function generateSidebar() {
                 pathwayButton.innerHTML = `<a href="#" onclick="displayInfo('${category}','${pathway}')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">${replaceHyphensWithSpaces(pathway)}</a>`;
                 pathwaysList.appendChild(pathwayButton);
             });
+
+            // Function to handle clicking on the arrow
+            const arrowIcon = categoryButton.querySelector('.arrow-icon');
+            arrowIcon.addEventListener('click', (event) => {
+                event.stopPropagation(); // Stop event propagation to prevent calling the method
+                togglePathways(category, pathways);
+            });
+
+            // Function to toggle the display of pathways
+            function togglePathways(category, pathways) {
+                pathwaysList.classList.toggle('hidden');
+                // Change arrow icon based on visibility
+                if (pathwaysList.classList.contains('hidden')) {
+                    arrowIcon.innerHTML = '&#9205;'; // Right-pointing arrow when collapsed
+                } else {
+                    arrowIcon.innerHTML = '&#9207;'; // Downward-pointing arrow when expanded
+                }
+            }
+
+            // Function to call a different method when clicking on the category button
+            function callDifferentMethod(category, pathways) {
+                // Replace this placeholder with the method you want to call
+                console.log(`Calling a different method for ${category}`);
+                displayCategoryInfo(category);
+            }
         });
     } catch (error) {
         console.error('Error:', error);
     }
 }
+
+
+
+
+
+
+
+
 
 function togglePathways(category, pathways) {
     const escapedCategory = category.replace(/\s+/g, '-');
@@ -151,6 +184,37 @@ async function displayInfo(categoryName, keyName) {
     }
 }
 
+async function displayCategoryInfo(keyName) {//for displaying category page
+    try {
+        const parsedInfo = await parseInfoFile('info.json');
+        if (!parsedInfo) {
+            console.error('Error: Unable to fetch info data.');
+            return;
+        }
+        keyName = keyName.replace(/\s+/g, '-');
+        console.log("Parsed keys:", Object.keys(parsedInfo));
+        
+        console.log(parsedInfo);
+        console.log(keyName);
+
+        if (!(keyName in parsedInfo)) {
+            console.error(`Error: '${keyName}' not found in parsedInfo.`);
+            return;
+        }
+
+        const info = parsedInfo[keyName];
+
+        title.textContent = keyName.replace(/-/g, ' ');
+
+        displayCategoryPage();
+        console.log("Title:", keyName);
+
+    } catch (error) {
+        console.error('Error:', error);
+    }
+
+}
+
 function displayPathwayInfo(info) {
     const { Concentrator, Capstone } = info;
     const concentratorName = Concentrator.name;
@@ -193,6 +257,16 @@ function displayHomePage() {
         </div>
     `;
     displayContent(content);
+}
+
+function displayCategoryPage() {
+    const content = `
+        <div class="border rounded-lg p-4 bg-white">
+            <p>It's the category page</p>
+        </div>
+    `;
+    displayContent(content);
+
 }
 
 function displayContent(content) {
