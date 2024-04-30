@@ -29,7 +29,7 @@ async function generateSidebar() {
             const categoryButton = document.createElement('button');
             categoryButton.classList.add('block', 'px-4', 'py-2', 'rounded-lg', 'hover:bg-gray-200', 'mb-4', 'focus:outline-none', 'focus:bg-gray-200');
             categoryButton.innerHTML = `<span class="arrow-icon">&#9205;</span> ${replaceHyphensWithSpaces(category)}`;
-            categoryButton.addEventListener('click', () => callDifferentMethod(category, pathways));
+            categoryButton.addEventListener('click', () => displayInfoPage(category, ''));
             categoryContainer.appendChild(categoryButton);
 
             // Create the pathways list for the category
@@ -42,7 +42,7 @@ async function generateSidebar() {
                 // Check if the value corresponding to the key is an object
                 if (typeof pathways[pathway] === 'object' && pathways[pathway] !== null) {
                     const pathwayButton = document.createElement('li');
-                    pathwayButton.innerHTML = `<a href="#" onclick="displayInfo('${category}','${pathway}')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">${replaceHyphensWithSpaces(pathway)}</a>`;
+                    pathwayButton.innerHTML = `<a href="#" onclick="displayInfoPage('${category}','${pathway}')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">${replaceHyphensWithSpaces(pathway)}</a>`;
                     pathwaysList.appendChild(pathwayButton);
                 }
             });
@@ -70,18 +70,12 @@ async function generateSidebar() {
                     arrowIcon.innerHTML = '&#9207;'; // Downward-pointing arrow when expanded
                 }
             }
-
-            // Function to call a different method when clicking on the category button
-            function callDifferentMethod(category, pathways) {
-                // Replace this placeholder with the method you want to call
-                console.log(`Calling a different method for ${category}`);
-                displayCategoryInfo(category);
-            }
         });
     } catch (error) {
         console.error('Error:', error);
     }
 }
+
 
 
 
@@ -151,45 +145,24 @@ function replaceSpacesWithHyphens(obj) {
 }
 
 
-async function displayInfo(categoryName, keyName) {
-    console.log("Category Name: ", categoryName);
-    console.log("Key Name: ", keyName);
+async function displayInfoPage(categoryName, keyName = '') {
+    console.log("displayInfoPage called with categoryName: ", categoryName, " and keyName: ", keyName);
     try {
         const parsedInfo = await parseInfoFile('info.json');
         if (!parsedInfo) {
             console.error('Error: Unable to fetch info data.');
             return;
         }
-        keyName = keyName.replace(/\s+/g, '-');
-        console.log("Parsed keys:", Object.keys(parsedInfo));
-        console.log("Parsed keys after fix: ", Object.keys(parsedInfo[categoryName]));
-        
-        console.log(parsedInfo);
-        console.log(keyName);
 
-        if (!(keyName in parsedInfo[categoryName])) {
-            console.error(`Error: '${keyName}' not found in parsedInfo.`);
+        const info = getCategoryInfo(parsedInfo, categoryName, keyName);
+
+        if (!info) {
+            console.error(`Error: Info not found for ${categoryName} - ${keyName}`);
             return;
         }
 
-        const info = parsedInfo[categoryName][keyName];
-
-        title.textContent = keyName.replace(/-/g, ' ');
-        console.log("Info: ", info);
-        if ("Type" in info && info.Type === "Home") {
-            displayHomePage();
-        } else if ("Concentrator" in info && "Capstone" in info) {
-            displayPathwayInfo(info);
-        } else if ("description" in info) {
-            displayCourseInfo(info);
-        } else if (parsedInfo[categoryName].Type === "About") {
-            displayAboutPage();
-        }
-        else {
-            console.error("Error: Invalid info object.");
-        }
-
-        console.log("Title:", keyName);
+        const content = generateInfoContent(info);
+        displayContent(content);
 
     } catch (error) {
         console.error('Error:', error);
@@ -197,98 +170,66 @@ async function displayInfo(categoryName, keyName) {
 }
 
 
-async function displayCategoryInfo(keyName) {//for displaying category page
-    try {
-        const parsedInfo = await parseInfoFile('info.json');
-        if (!parsedInfo) {
-            console.error('Error: Unable to fetch info data.');
-            return;
+
+function getCategoryInfo(parsedInfo, categoryName, keyName) {
+    if (categoryName === 'Home' || categoryName === 'About') {
+        return parsedInfo[categoryName];
+    } else if (parsedInfo[categoryName]) {
+        if (keyName) {
+            console.log(parsedInfo[categoryName][keyName]);
+            return parsedInfo[categoryName][keyName];
+        } else {
+            // If keyName is blank, return the entire category object
+            console.log(parsedInfo[categoryName]);
+            return parsedInfo[categoryName];
         }
-        keyName = keyName.replace(/\s+/g, '-');
-        console.log("Parsed keys:", Object.keys(parsedInfo));
-        
-        console.log(parsedInfo);
-        console.log(keyName);
+    }
+    return null;
+}
 
-        if (!(keyName in parsedInfo)) {
-            console.error(`Error: '${keyName}' not found in parsedInfo.`);
-            return;
+
+function generateInfoContent(info) {
+    let content = '';
+
+    // Check if the info represents a category with Concentrator and Capstone objects
+    if (info['Concentrator'] && info['Capstone']) {
+        content += generateTextBoxForPathway(info['Concentrator']);
+        content += generateTextBoxForPathway(info['Capstone']);
+    } else {
+        // Iterate through all keys and generate text boxes
+        for (const key in info) {
+            if (key !== 'Type' && typeof info[key] === 'string') {
+                content += generateTextBox(info[key]);
+            }
         }
-
-        const info = parsedInfo[keyName];
-
-        title.textContent = keyName.replace(/-/g, ' ');
-
-        displayCategoryPage();
-        console.log("Title:", keyName);
-
-    } catch (error) {
-        console.error('Error:', error);
     }
 
+    return content;
 }
 
-function displayPathwayInfo(info) {
-    const { Concentrator, Capstone } = info;
-    const concentratorName = Concentrator.name;
-    const concentratorDescription = Concentrator.description;
-    const capstoneName = Capstone.name;
-    const capstoneDescription = Capstone.description;
 
-    const content = `
-        <div class="grid grid-cols-2 gap-8">
-            <div class="border rounded-lg p-4 bg-white">
-                <h2 class="text-xl font-semibold mb-4">${concentratorName}</h2>
-                <p>${concentratorDescription}</p>
-            </div>
-            <div class="border rounded-lg p-4 bg-white">
-                <h2 class="text-xl font-semibold mb-4">${capstoneName}</h2>
-                <p>${capstoneDescription}</p>
-            </div>
-        </div>
-    `;
-    displayContent(content);
+function generateTextBoxForPathway(pathway) {
+    let content = '<div class="border rounded-lg p-4 bg-white my-4">';
+    if (typeof pathway === 'object') {
+        for (const key in pathway) {
+            content += `<p><strong>${key}:</strong> ${pathway[key]}</p>`;
+        }
+    } else {
+        content += `<p>${pathway}</p>`;
+    }
+    content += '</div>';
+    return content;
 }
 
-function displayCourseInfo(info) {
-    const { name, description, prerequisites } = info;
 
-    const content = `
-        <div class="border rounded-lg p-4 bg-white">
-            <h2 class="text-xl font-semibold mb-4">${name}</h2>
-            <p>${description}</p>
-            <p>Prerequisites: ${prerequisites.join(", ")}</p>
+
+
+function generateTextBox(text) {
+    return `
+        <div class="border rounded-lg p-4 bg-white my-4">
+            <p>${text}</p>
         </div>
     `;
-    displayContent(content);
-}
-
-function displayHomePage() {
-    const content = `
-        <div class="border rounded-lg p-4 bg-white">
-            <p>It's the home page</p>
-        </div>
-    `;
-    displayContent(content);
-}
-
-function displayAboutPage() {
-    const content = `
-        <div class="border rounded-lg p-4 bg-white">
-            <p>It's the about page</p>
-        </div>
-    `;
-    displayContent(content);
-}
-
-function displayCategoryPage() {
-    const content = `
-        <div class="border rounded-lg p-4 bg-white">
-            <p>It's the category page</p>
-        </div>
-    `;
-    displayContent(content);
-
 }
 
 function displayContent(content) {
@@ -298,5 +239,7 @@ function displayContent(content) {
 
 
 
+
+
 window.onload = generateSidebar();
-displayCategoryInfo('Home');
+window.onload = displayInfoPage('Home', '');

@@ -15,6 +15,7 @@
   },
   "Engineering Architecture": {
     "Type": "Category",
+    "Description": "This is the Engineering Architecture category.",
     "Engineering Technology": {
       "Concentrator": {
         "name": "Engineering Technology I",
@@ -54,6 +55,7 @@
   },
   "Information and Communication Technology": {
     "Type": "Category",
+    "Description": "This is the Information and Communication Technology category.",
     "Software and Systems Developer": {
       "Concentrator": {
         "name": "AP Computer Science",
@@ -93,6 +95,7 @@
   },
   "Health Science and Medical Technology": {
     "Type": "Category",
+    "Description": "This is the Health Science and Medical Technology category.",
     "Patient Care": {
       "Concentrator": {
         "name": "Health Careers I",
@@ -114,6 +117,7 @@
   },
   "Business and Finance": {
     "Type": "Category",
+    "Description": "This is the Business and Finance category.",
     "Business Management": {
       "Concentrator": {
         "name": "Business Management I",
@@ -135,6 +139,7 @@
   },
   "Arts Media and Entertainment": {
     "Type": "Category",
+    "Description": "This is the Arts Media and Entertainment category.",
     "Commercial Art": {
       "Concentrator": {
         "name": "Commercial Art I",
@@ -174,6 +179,7 @@
   },
   "Work Experience Exploration": {
     "Type": "Category",
+    "Description": "This is the Work Experience Exploration category.",
     "Work Experience Exploration": {
       "Concentrator": {
         "name": "Work Experience Exploration",
