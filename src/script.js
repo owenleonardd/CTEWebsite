@@ -42,7 +42,7 @@ async function generateSidebar() {
                 // Check if the value corresponding to the key is an object
                 if (typeof pathways[pathway] === 'object' && pathways[pathway] !== null) {
                     const pathwayButton = document.createElement('li');
-                    pathwayButton.innerHTML = `<a href="#" onclick="displayInfoPage('${category}','${pathway}')" class="block px-4 py-2 rounded-lg hover:bg-gray-200">${replaceHyphensWithSpaces(pathway)}</a>`;
+                    pathwayButton.innerHTML = `<a href="#" onclick="displayInfoPage('${category}','${pathway}')" class="block px-8 py-2 rounded-lg my-2 hover:bg-gray-200">${replaceHyphensWithSpaces(pathway)}</a>`;
                     pathwaysList.appendChild(pathwayButton);
                 }
             });
@@ -207,17 +207,26 @@ function generateInfoContent(info) {
     return content;
 }
 
-
 function generateTextBoxForPathway(pathway) {
     let content = '<div class="border rounded-lg p-4 bg-white my-4">';
     if (typeof pathway === 'object') {
         for (const key in pathway) {
-            if(key === 'name'){
-                content += `<p><strong>${pathway[key]}</strong><br><br></p>`;
-            }else{
+            if (key === 'name') {
+                content += `<p><strong>${pathway[key]}`;
+                // Add icons for boolean variables
+                if (pathway.isDualEnrollment) {
+                    content += ' <i class="fa-solid fa-circle-check"></i>';
+                }
+                if (pathway.isCTSO) {
+                    content += ' <i class="fa-solid fa-circle-check"></i>';
+                }
+                if (pathway.hasCerts) {
+                    content += ' <i class="fa-solid fa-circle-check"></i>';
+                }
+                content += `</strong><br><br></p>`;
+            } else {
                 content += `<p>${pathway[key]}<br></p>`;
             }
-            //<p><strong>${key}:</strong>${pathway[key]}</p>
         }
     } else {
         content += `<p>${pathway}</p>`;
@@ -225,6 +234,7 @@ function generateTextBoxForPathway(pathway) {
     content += '</div>';
     return content;
 }
+
 
 
 
