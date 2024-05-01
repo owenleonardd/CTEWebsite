@@ -212,7 +212,12 @@ function generateTextBoxForPathway(pathway) {
     let content = '<div class="border rounded-lg p-4 bg-white my-4">';
     if (typeof pathway === 'object') {
         for (const key in pathway) {
-            content += `<p><strong>${key}:</strong> ${pathway[key]}</p>`;
+            if(key === 'name'){
+                content += `<p><strong>${pathway[key]}</strong><br><br></p>`;
+            }else{
+                content += `<p>${pathway[key]}<br></p>`;
+            }
+            //<p><strong>${key}:</strong>${pathway[key]}</p>
         }
     } else {
         content += `<p>${pathway}</p>`;

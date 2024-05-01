@@ -1,7 +1,7 @@
 {
   "Home": {
     "Type": "Home",
-    "Description": "This is the home page."
+    "Description": "<span style='font-size: 20px;'><strong>What is CTE?</strong></span> <br><br>Career Technical Education classes give students an opportunity to explore specific career pathways while discovering the real-world application of the knowledge and skills learned in core subjects. Career Technical Education classes also deeply expose students in practical skills, problem solving, creativity, and team building. These \"soft\" skills are the skills the current job market and industry demands of future applicants to be competitive in today's global workplace.<br><br>In Career Technical Education classes, students use math to design buildings, build sets, build robots, and create code. They use artistic skills to prepare meals, design cities, create graphics, web designs and presentations from films to theater productions.  They use reading and writing skills to produce multimedia publications, evaluate architectural styles, and develop storylines for student-produced videos. They use science to solve ecological problems and plan sustainable cities and resources of the future. They study history, and use what we have learned from our past, to plan for our future.  Career and Technical Education classes are the future. One size does not fit all, and we have to answer the demand of our community and industry to produce the job force that is needed in the 21st century.<br><br>While many of our Career Technical Education programs may provide students options for entry level employment, most students complete Career Technical Education courses with an understanding of the next steps they need to take on their career paths, whether it is continuing on to college for a degree or job-related certificate or applying to local apprenticeship programs where they can master a craft as they earn a living.<br><br>MVLA CTE programs and services allow all students to graduate from high school prepared to succeed in the workplace and at the post secondary level. With a varied set of program offerings, Career Technical Education classes prepare students to be successful in life after high school."
   },
   "About": {
     "Type": "About",
@@ -19,7 +19,7 @@
     "Engineering Technology": {
       "Concentrator": {
         "name": "Engineering Technology I",
-        "description": "This is the first course.",
+        "description": "Engineering Technology I is the first-level class in the Engineering Program. This course familiarizes students with careers in engineering and related technical fields.  Students will learn engineering fundamentals and tool use through hands-on design and fabrication. Students complete interesting projects in a variety of  areas as they gain confidence and explore the nature of engineering, the design process, computer aided drafting and design, manufacturing materials, and a survey of engineering disciplines. No prior experience is necessary. Students learn about mechanical design, civil and architectural engineering, electricity and electronics, and robotics engineering. They learn to prototype their designs using CAD, hand and machine tools, 3D printing and laser cutting.  Projects are designed to allow students to make connections between related science and engineering disciplines. This course is for students who want to experience and prepare for college and university studies and for those who like to design and fabricate products. This course is a prerequisite to Engineering Technology II.",
         "prerequisites": [],
         "isDualEnrollment": false,
         "isCTSO": false,
@@ -27,8 +27,26 @@
       },
       "Capstone": {
         "name": "Engineering Technology II",
-        "description": "This is the second course.",
+        "description": "Engineering Technology II is the second-level class or capstone class of the Engineering Pathway.. This is an advanced engineering course designed to further expose students to engineering technology careers and college majors, and it provides hands-on instruction in several engineering disciplines including mechanical, electrical, and civil engineering. Students will design and build projects including mechanical and electrical systems, products for specific users, UAV (drone) production, and electric vehicles. Projects are designed to allow students to explore topics in depth and to make connections between related science and engineering disciplines. Students will demonstrate mastery of content and process by completion and presentation of these long-term projects. Engineering Technology II is designed for students who want to prepare for college and university studies or for future engineering careers. ",
         "prerequisites": ["Engineering Technology I"],
+        "isDualEnrollment": false,
+        "isCTSO": false,
+        "hasCerts": false
+      }
+    },
+    "Engineering Design": {
+      "Concentrator": {
+        "name": "Robotics I",
+        "description": "An introductory course teaching the basics of engineering and the process of engineering design and the manufacturing process. Students will learn the foundational skills necessary for a competition robotics team: computer aided design, machining, assembly, code, basic physics, and electronics. Students will work in collaborative groups designing robots to address various engineering challenges. Students will be expected to attend a couple hours of one local competition each semester to experience the primary challenge of the second year Robotics 2 course.",
+        "prerequisites": [],
+        "isDualEnrollment": false,
+        "isCTSO": false,
+        "hasCerts": false
+      },
+      "Capstone": {
+        "name": "Robotics II",
+        "description": "A second+ year course for veteran robotics team members. This course is primarily focused on continuing skill development around the FIRST competition. In the fall, students will engage in offseason projects and rebuilds to improve and prepare for multiple off-season competitions. Veterans are expected to train new team members in skill development in preparation for build season in January and February. During build season veterans will lead design teams guiding other team members through components of the primary robot build. Students enrolled will automatically be considered part of FIRST Robotics Competition Los Altos Robotics Team 114 Eaglestrike and are expected to join the team at competition and devote significanttime to engage in the primary robot build in January and February.",
+        "prerequisites": ["Robotics I"],
         "isDualEnrollment": false,
         "isCTSO": false,
         "hasCerts": false
@@ -37,7 +55,7 @@
     "Architecture Design": {
       "Concentrator": {
         "name": "Architecture Design I",
-        "description": "This is the first course.",
+        "description": "Architectural Design I is the concentrator CTE course in the architectural design pathway intended to help students develop skills that require Architectural graphic & design abilities. Concepts of Architectural planning and design, and the skills and techniques used by the Architect in designing and planning structures are used throughout the course. Students are guided through a series of assignments and projects that provide an understanding of how visual arts apply to real world problems through the use of a computer-aided design system. Students will work individually and in teams to solve a variety of design problems assigned by the instructor or jobs developed from the community. This course will allow students to increase their potential of successfully entering and participating in advanced college and/or career programs.",
         "prerequisites": [],
         "isDualEnrollment": false,
         "isCTSO": false,
@@ -45,7 +63,7 @@
       },
       "Capstone": {
         "name": "Architecture Design II",
-        "description": "This is the second course.",
+        "description": "This CTE course is the capstone course in the architectural design pathway that will  introduce students to more real, semester-long projects that involve more advanced architectural concepts surrounding material, program, site analysis and building structure. Students will be expected to produce compelling and visually appealing projects around speculative client briefs, culminating in a printed portfolio requirement that prepares students for real world internships in the architectural field.  ",
         "prerequisites": ["Architecture Design I"],
         "isDualEnrollment": false,
         "isCTSO": false,
@@ -59,16 +77,16 @@
     "Software and Systems Developer": {
       "Concentrator": {
         "name": "AP Computer Science",
-        "description": "This is the first course.",
-        "prerequisites": [],
+        "description": "This is a yearlong concentrator CTE course and Advanced Placement (AP) course.  AP Computer Science A teaches students the fundamentals of programming leading to concepts in data structures and object orientation in Java.  Topics include input/outputs, conditionals, iteration, classes, array, ArrayList, 2D array, inheritance, and recursion.  In addition, students will work on building small to large-scale applications and games emphasizing skills in problem-solving, coding design, graphics, and user interfaces.  Throughout the year, students will review and prepare for the AP Computer Science A exam. ",
+        "prerequisites": ["Computer Science I"],
         "isDualEnrollment": false,
         "isCTSO": false,
         "hasCerts": false
       },
       "Capstone": {
-        "name": "Advanced Computer Science",
-        "description": "This is the second course.",
-        "prerequisites": ["Information Technology I"],
+        "name": "Advanced Computer Science/ADEN",
+        "description": "This is the capstone course in the software design pathway in which advanced computer Science aims to be a class where students work to expand their programming knowledge beyond AP Computer Science A. This course will have an emphasis on building and applying concepts in data structures. Students will learn such topics as generics, linked lists, stacks, sets, hash tables, maps, graphs, heaps, priority queues, and trees. Students will do performance analysis (Big O) and develop applications pertaining to each data structure. In addition, students will explore and utilize concepts in search, sorting, design, file i/o, networking, and multithreading.",
+        "prerequisites": ["AP Computer Science"],
         "isDualEnrollment": false,
         "isCTSO": false,
         "hasCerts": false
@@ -77,7 +95,7 @@
     "Games and Simulation": {
       "Concentrator": {
         "name": "Computer Science I",
-        "description": "This is the first course.",
+        "description": "This is the concentrator CTE course in which students learn computer science in four languages, one per quarter. In quarter one, students begin with a drag-and-drop environment using programming blocks (SNAP!). This allows students with no experience at all to avoid many common frustrations beginning programmers usually meet with, such as syntax errors. It also allows us to begin with Graphical User Interfaces on day one, creating side scrolling video games in the second week of class. In the second quarter, students learn Python, use Raspberry Pi mini-computers, and learn basic circuitry using breadboards. Python is used for its readability, good use of whitespace, and overall organization. Students spend the third quarter programming VEX robots and Arduino microcontrollers in the C programming language. In the fourth quarter, students learn Java with a focus on object-oriented programming and preparation for AP Computer Science A. In the final weeks of the year students learn C# and create a 2D game in the Unity Game Engine in preparation for the App and Game Design course. The App and Game Design course is the capstone CTE course for the Games and Simulations pathway.",
         "prerequisites": [],
         "isDualEnrollment": false,
         "isCTSO": false,
@@ -85,7 +103,7 @@
       },
       "Capstone": {
         "name": "App and Game Design",
-        "description": "This is the second course.",
+        "description": "This is the capstone course in the Games and Simulation Pathway in which students learn to create mobile apps, 2D games and 3D games using the Unity Game Engine and the C# programming language. Students will spend the first semester of the year creating 2D mobile apps and games. Students will spend the second semester working in 3D, with more complex geometry, modeling, texturing and lighting. Students study Game Design and theories of Play. Students practice creativity and design thinking. Students work in collaborative groups to create long term projects. Students learn to playfully mod existing games as well as create their own original games.",
         "prerequisites": ["Communication Technology I"],
         "isDualEnrollment": false,
         "isCTSO": false,
@@ -99,7 +117,7 @@
     "Patient Care": {
       "Concentrator": {
         "name": "Health Careers I",
-        "description": "This is the first course.",
+        "description": "This is the first/concentrator course in the Health Careers Pathway. Students who are interested in any career within the healthcare field (e.g. nurse, doctor, dentist, veterinarian, dental hygienist, ultrasound tech, optometrist, etc.) should consider this pathway. <br><br>Students will learn the history of healthcare, explore a variety of healthcare occupations via guest speakers and field trips, learn about current health trends and body systems via case studies and labs, help with the school blood drives, and earn American Heart Association BLS certification among other things.  ",
         "prerequisites": [],
         "isDualEnrollment": false,
         "isCTSO": false,
@@ -107,7 +125,7 @@
       },
       "Capstone": {
         "name": "Health Careers II",
-        "description": "This is the second course.",
+        "description": "This course is the capstone/final course in the CTE Health Careers Pathway. It is open to all students interested in pursuing a career in the healthcare industry who have taken Health Careers I. This is a dual enrollment class with a field experience component, e.g. learning opportunities in hospitals, clinics, and other medical worksites in local industry settings.",
         "prerequisites": ["Health Careers I"],
         "isDualEnrollment": false,
         "isCTSO": false,
@@ -121,16 +139,59 @@
     "Business Management": {
       "Concentrator": {
         "name": "Business Management I",
-        "description": "This is the first course.",
+        "description": "This is the first, or concentrator course, in the Business Management Pathway. Students learn the four main functional areas of business - marketing, operations, human resources, and finance. This includes exposure to analysis tools and research methods used to identify business operation related problems and how to implement solutions efficiently and effectively.<br><br>Students who are interested in Entrepreneurship and/or a career in Finance, Management, Marketing, Operations, or just learning the principles of Business Management should consider this pathway. ",
+        "prerequisites": [],
+        "isDualEnrollment": true,
+        "isCTSO": false,
+        "hasCerts": false
+      },
+      "Capstone": {
+        "name": "Business Management II",
+        "description": "This course is the capstone course in the CTE Business Management Pathway, and is open to all students. <br>- Students will be working in leadership teams that mimic a real world business operation, including human resources, marketing, budgeting, and sustainability in today’s global society.</span><br>       - Students will create their own business and operate as key members of that business for success as they learn the different aspects of what it takes to operate a successful business, or be part of a business team.  Students will have the opportunity to compete in business related competitions via Virtual Enterprise and DECA.",
+        "prerequisites": ["Business Management I"],
+        "isDualEnrollment": true,
+        "isCTSO": false,
+        "hasCerts": false
+      }
+    }
+  },
+  "Hospitality, Tourism, and Recreation": {
+    "Type": "Category",
+    "Description": "This is the Business and Finance category.",
+    "Food Service Hospitality": {
+      "Concentrator": {
+        "name": "Culinary I",
+        "description": "This two-semester program with an additional second year of training available prepares students for food production, preparation and service employment in institutional, commercial or independently owned food establishments or other food and hospitality industry occupations. Instruction includes topics such as planning, selecting, storing, purchasing, preparing, testing, serving and selling of quality food and food products. The program includes the basic skills of food service including sanitation, safety, methods of cooking, stocks, soups, sauces, methods of baking, pastry, banquet set up, catering, nutrition, and job preparation. Teaching methods include demonstration, laboratory, and textbook work. Students have an opportunity to cook both individually and in groups and to participate in planning meals. During the second semester students are counseled to participate in “on the job training.” On the job training may be completed at fast food restaurants, coffee shop operations, on-site food service, or in independent living retirement centers. This may be followed by actual employment at these sights. This experience has the potential to lead to actual employment opportunities.",
+        "prerequisites": [],
+        "isDualEnrollment": true,
+        "isCTSO": false,
+        "hasCerts": false
+      },
+      "Capstone": {
+        "name": "Culinary II",
+        "description": "This course prepares the student to work in the food service industry. The program prepares students with food production, preparation and service skills for employment in institutional, commercial or independently owned food establishments or other food and hospitality industry occupations. Instruction includes topics such as planning, selecting, storing, purchasing, preparing, testing, serving and selling of quality food and food products. Students are expected to meet a higher level of performance in the quantity and quality of their assigned work. The students will learn intermediate level skills, both theoretical and practical, performed in the dining room and kitchen restaurant operations. Teaching methods include demonstration, laboratory and textbook work. Training areas covered in this course will include food service facilities and equipment; quality food purchasing and costing; health and safety regulations and practices; skills in food preparation and service and practical experience in such food service jobs. Integrated throughout the course are career preparation standards, which include basic academic skills, communication, interpersonal skills, problem solving, safety technology and other employment skills. The full Serve-Safe curriculum and certification is a major emphasis of this course. State law dictates every food facility must have one or more certified employee.",
+        "prerequisites": ["Business Management I"],
+        "isDualEnrollment": true,
+        "isCTSO": false,
+        "hasCerts": false
+      }
+    }
+  },"Manufacturing & Product Development": {
+    "Type": "Category",
+    "Description": "This is the Arts Media and Entertainment category.",
+    "Product Innovation & Design": {
+      "Concentrator": {
+        "name": "Design and Prototype",
+        "description": "Students will engage in projects demonstrating proficiency in design thinking through the application of skills in the following areas:<br>● Art and design concepts<br>● Robotics and coding<br>○ VEX – RobotC<br>○ Arduino – Java<br>● Prototyping with 3D printers and laser<br>cutters<br>○ TinkerCAD, Fusion360, or other<br>modeling environment<br>○ Adobe Illustrator<br>● User empathy and understanding the complexities of real world problems <br>Students will participate in design teams of 3 to 4 other students to address a challenge or problem in their community. They will spend the year applying their learning of design thinking to create a solution to their chosen problem. The focus of this problem oriented design thinking is to push past the desire to design for yourself and to understand what is needed to properly design and create with another user or group of users in mind. Experience with the technical skills listed above is appreciated but not required.",
         "prerequisites": [],
         "isDualEnrollment": false,
         "isCTSO": false,
         "hasCerts": false
       },
       "Capstone": {
-        "name": "Business Management II",
-        "description": "This is the second course.",
-        "prerequisites": ["Business Management I"],
+        "name": "Design and Fabrication",
+        "description": "This course follows two years of prior engineering, computer science or architectural design coursework and gives students the freedom to propose, design and refine their own project or professional certification. Students are expected to work in teams and collaborate on a long-term project utilizing emerging technologies and a range of skills. Students will present their project proposal to an industry panel and will receive feedback on their progress. Project proposals may fall under any of a variety of TED pathways including mechanical, civil, software or electrical engineering, computer science, app and game design, product design, architectural design, or other subjects as approved by the instructor. Students will follow their project through from conception to completion during the course of the year, and will document their design and manufacturing process as they develop a professional quality product. In addition to the specific design and technology skills that their project demands, students will develop skills in field research, project management, teamwork, leadership, time management, customer relations, budget management, and community outreach.",
+        "prerequisites": ["Design and Prototype"],
         "isDualEnrollment": false,
         "isCTSO": false,
         "hasCerts": false
@@ -143,7 +204,7 @@
     "Commercial Art": {
       "Concentrator": {
         "name": "Commercial Art I",
-        "description": "This is the first course.",
+        "description": "Commercial Art is the first concentrator course in the commercial art CTE-AME Pathway (Media Arts). The Commercial Art I is designed to enable students to achieve digital arts literacy as a distinct, stand-alone arts discipline, whose basic categories include the following areas: photography, imaging, sound, animation, video, web design, graphic design, virtual design, interactive design. Curriculum is based on the 2019 California VAPA and CTE AME Standards. Successful completion of this class satisfies MVHS graduation requirements in art and UC/CSU A-G (f) admission requirements and offers college credit and a GPA bump through dual-enrollment with Foothill College. Historical periods and artists are compared and contrasted through reading, writing, and computer – based activities. Aesthetic valuing and criticism are infused within the curriculum through verbal and written critique of student work and the artwork of professional and historical artists.",
         "prerequisites": [],
         "isDualEnrollment": false,
         "isCTSO": false,
@@ -151,26 +212,62 @@
       },
       "Capstone": {
         "name": "Commercial Art II",
-        "description": "This is the second course.",
+        "description": "This course is the Capstone course in the commercial art CTE pathway that  offers college credit and a GPA bump through dual-enrollment with Foothill College. Emphasis is on the commercial applications of art to graphic design and illustration, video and photography, and 3D printing. Students study design basics and advanced skills as preparation for careers through the history of art and design, analysis, interpretation and critiques. Students use a variety of techniques ranging from handmade methods including screen printing to using software including Adobe Photoshop and Illustrator and 3D software such as Fusion 360 and Cura.",
         "prerequisites": ["Commercial Art I"],
         "isDualEnrollment": false,
         "isCTSO": false,
         "hasCerts": false
       }
     },
-    "Digital Communications": {
+    "Digital Communications: DC3 Pathway": {
       "Concentrator": {
         "name": "Digital Communications II",
-        "description": "This is the first course.",
-        "prerequisites": [],
+        "description": "This is the Concentrator course in the Digital Communications CTE pathway. Students will apply journalistic processes to the development and refinement of original audio and or visual content, learn how to capture and edit content for specific audiences, and how to properly operate equipment for capturing, editing, broadcasting, and streaming content in different environments. <br><br>This course also produces the school newspaper, The Oracle. Students will develop their creative and technical skills that prepare them for careers in media production and communications across digital platforms. They will learn about narrative structure and the journalistic process by telling impactful stories, and using industry standard state of the art software to do so.",
+        "prerequisites": ["Digital Communications I"],
         "isDualEnrollment": false,
         "isCTSO": false,
         "hasCerts": false
       },
       "Capstone": {
         "name": "Digital Communications III",
-        "description": "This is the second course.",
+        "description": "This course is the capstone course in the Digital Communication pathway. Students will refine their creative and technical skills while preparing for careers in media production and communications across digital platforms. They will apply narrative structure in the journalistic process while producing the school newspaper, The Oracle. Students will continue to learn to tell impactful stories, demonstrate proficiency in industry-standard tools and software, and properly operate equipment for capturing, editing, broadcasting and streaming content. Pathway completers will develop a professional portfolio and understand the application of skills in workplace environments. ",
         "prerequisites": ["Digital Communications II"],
+        "isDualEnrollment": false,
+        "isCTSO": false,
+        "hasCerts": false
+      }
+    },
+    "Digital Communications: Yearbook Pathway": {
+      "Concentrator": {
+        "name": "Digital Communications I",
+        "description": "Digital Communications I class is an introductory concentrator class to the CTE Digital Communications pathway that provides students with an understanding of printing and manufacturing processes and systems common to careers in the graphic arts and printing technology industries. The class focuses on the production of digital media and explores career options in the digital communications industry. This course will cover topics such as photography, graphic design, typography, image generation and file preparation, pre-press preparation, printing technologies, and business practices.",
+        "prerequisites": [],
+        "isDualEnrollment": false,
+        "isCTSO": false,
+        "hasCerts": false
+      },
+      "Capstone": {
+        "name": "Digital Communications II/Yearbook",
+        "description": "This course is a capstone course in the Digital Communications CTE pathway. Students will refine their creative and technical skills while preparing for careers in media production and communications across digital platforms. They will apply narrative structure in the journalistic process while producing the school yearbook. Students will continue to learn to tell impactful stories, demonstrate proficiency in industry-standard tools and software, and properly operate equipment for capturing, editing, broadcasting and streaming content. Pathway completers will develop a professional portfolio and understand the application of skills in workplace environments.",
+        "prerequisites": ["Digital Communications I"],
+        "isDualEnrollment": false,
+        "isCTSO": false,
+        "hasCerts": false
+      }
+    },
+    "Digital Communications: Newspaper Pathway": {
+      "Concentrator": {
+        "name": "Digital Communications I",
+        "description": "Digital Communications I class is an introductory concentrator class to the CTE Digital Communications pathway that provides students with an understanding of printing and manufacturing processes and systems common to careers in the graphic arts and printing technology industries. The class focuses on the production of digital media and explores career options in the digital communications industry. This course will cover topics such as photography, graphic design, typography, image generation and file preparation, pre-press preparation, printing technologies, and business practices.",
+        "prerequisites": [],
+        "isDualEnrollment": false,
+        "isCTSO": false,
+        "hasCerts": false
+      },
+      "Capstone": {
+        "name": "Digital Communications II/Newspaper",
+        "description": "This is a Capstone course in the Digital Communications CTE pathway. Students will apply journalistic processes to the development and refinement of original audio and or visual content, learn how to capture and edit content for specific audiences, and how to properly operate equipment for capturing, editing, broadcasting, and streaming content in different environments. <br><br>This course also produces the school newspaper. Students will develop their creative and technical skills that prepare them for careers in media production and communications across digital platforms. They will learn about narrative structure and the journalistic process by telling impactful stories, and using industry standard state of the art software to do so.",
+        "prerequisites": ["Digital Communications I"],
         "isDualEnrollment": false,
         "isCTSO": false,
         "hasCerts": false
@@ -183,7 +280,7 @@
     "Work Experience Exploration": {
       "Concentrator": {
         "name": "Work Experience Exploration",
-        "description": "This is the first course.",
+        "description": "Students must be eligible for a Work Permit to participate in this course. Work Experience Education is designed to support students who are working at a job that pays at least minimum wage to earn Elective credits for their Work Experience. Students will need to submit pay stubs regularly to show proof of employment and meet academic requirements to maintain a work permit. The Work Experience Instructor will be contacting employers regularly to ensure students are meeting all professional standards. Students will maintain a professional portfolio to demonstrate their learning from the job experience.",
         "prerequisites": [],
         "isDualEnrollment": false,
         "isCTSO": false,
@@ -191,7 +288,7 @@
       },
       "Capstone": {
         "name": "General Work Experience",
-        "description": "This is the second course.",
+        "description": "Students who are interested in gaining professional skills and experience should take this class. This class helps students focus and improve on their employability skills. Students DO NOT need to have a work permit or a job to take this course. Students can volunteer on or off campus, work in internships, or work seasonally to gain experience to support their future college and career goals. Students earn Elective credits for this course.",
         "prerequisites": ["Work Experience Exploration"],
         "isDualEnrollment": false,
         "isCTSO": false,
