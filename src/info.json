@@ -22,16 +22,16 @@
         "description": "Engineering Technology I is the first-level class in the Engineering Program. This course familiarizes students with careers in engineering and related technical fields.  Students will learn engineering fundamentals and tool use through hands-on design and fabrication. Students complete interesting projects in a variety of  areas as they gain confidence and explore the nature of engineering, the design process, computer aided drafting and design, manufacturing materials, and a survey of engineering disciplines. No prior experience is necessary. Students learn about mechanical design, civil and architectural engineering, electricity and electronics, and robotics engineering. They learn to prototype their designs using CAD, hand and machine tools, 3D printing and laser cutting.  Projects are designed to allow students to make connections between related science and engineering disciplines. This course is for students who want to experience and prepare for college and university studies and for those who like to design and fabricate products. This course is a prerequisite to Engineering Technology II.",
         "prerequisites": [],
         "isDualEnrollment": false,
-        "isCTSO": false,
-        "hasCerts": false
+        "isCTSO": true,
+        "hasCerts": true
       },
       "Capstone": {
         "name": "Engineering Technology II",
         "description": "Engineering Technology II is the second-level class or capstone class of the Engineering Pathway.. This is an advanced engineering course designed to further expose students to engineering technology careers and college majors, and it provides hands-on instruction in several engineering disciplines including mechanical, electrical, and civil engineering. Students will design and build projects including mechanical and electrical systems, products for specific users, UAV (drone) production, and electric vehicles. Projects are designed to allow students to explore topics in depth and to make connections between related science and engineering disciplines. Students will demonstrate mastery of content and process by completion and presentation of these long-term projects. Engineering Technology II is designed for students who want to prepare for college and university studies or for future engineering careers. ",
         "prerequisites": ["Engineering Technology I"],
         "isDualEnrollment": false,
-        "isCTSO": false,
-        "hasCerts": false
+        "isCTSO": true,
+        "hasCerts": true
       }
     },
     "Engineering Design": {
@@ -119,17 +119,17 @@
         "name": "Health Careers I",
         "description": "This is the first/concentrator course in the Health Careers Pathway. Students who are interested in any career within the healthcare field (e.g. nurse, doctor, dentist, veterinarian, dental hygienist, ultrasound tech, optometrist, etc.) should consider this pathway. <br><br>Students will learn the history of healthcare, explore a variety of healthcare occupations via guest speakers and field trips, learn about current health trends and body systems via case studies and labs, help with the school blood drives, and earn American Heart Association BLS certification among other things.  ",
         "prerequisites": [],
-        "isDualEnrollment": false,
+        "isDualEnrollment": true,
         "isCTSO": false,
-        "hasCerts": false
+        "hasCerts": true
       },
       "Capstone": {
         "name": "Health Careers II",
         "description": "This course is the capstone/final course in the CTE Health Careers Pathway. It is open to all students interested in pursuing a career in the healthcare industry who have taken Health Careers I. This is a dual enrollment class with a field experience component, e.g. learning opportunities in hospitals, clinics, and other medical worksites in local industry settings.",
         "prerequisites": ["Health Careers I"],
-        "isDualEnrollment": false,
+        "isDualEnrollment": true,
         "isCTSO": false,
-        "hasCerts": false
+        "hasCerts": true
       }
     }
   },
@@ -142,16 +142,16 @@
         "description": "This is the first, or concentrator course, in the Business Management Pathway. Students learn the four main functional areas of business - marketing, operations, human resources, and finance. This includes exposure to analysis tools and research methods used to identify business operation related problems and how to implement solutions efficiently and effectively.<br><br>Students who are interested in Entrepreneurship and/or a career in Finance, Management, Marketing, Operations, or just learning the principles of Business Management should consider this pathway. ",
         "prerequisites": [],
         "isDualEnrollment": true,
-        "isCTSO": false,
-        "hasCerts": false
+        "isCTSO": true,
+        "hasCerts": true
       },
       "Capstone": {
         "name": "Business Management II",
         "description": "This course is the capstone course in the CTE Business Management Pathway, and is open to all students. <br>- Students will be working in leadership teams that mimic a real world business operation, including human resources, marketing, budgeting, and sustainability in today’s global society.</span><br>       - Students will create their own business and operate as key members of that business for success as they learn the different aspects of what it takes to operate a successful business, or be part of a business team.  Students will have the opportunity to compete in business related competitions via Virtual Enterprise and DECA.",
         "prerequisites": ["Business Management I"],
         "isDualEnrollment": true,
-        "isCTSO": false,
-        "hasCerts": false
+        "isCTSO": true,
+        "hasCerts": true
       }
     }
   },
@@ -163,17 +163,17 @@
         "name": "Culinary I",
         "description": "This two-semester program with an additional second year of training available prepares students for food production, preparation and service employment in institutional, commercial or independently owned food establishments or other food and hospitality industry occupations. Instruction includes topics such as planning, selecting, storing, purchasing, preparing, testing, serving and selling of quality food and food products. The program includes the basic skills of food service including sanitation, safety, methods of cooking, stocks, soups, sauces, methods of baking, pastry, banquet set up, catering, nutrition, and job preparation. Teaching methods include demonstration, laboratory, and textbook work. Students have an opportunity to cook both individually and in groups and to participate in planning meals. During the second semester students are counseled to participate in “on the job training.” On the job training may be completed at fast food restaurants, coffee shop operations, on-site food service, or in independent living retirement centers. This may be followed by actual employment at these sights. This experience has the potential to lead to actual employment opportunities.",
         "prerequisites": [],
-        "isDualEnrollment": true,
+        "isDualEnrollment": false,
         "isCTSO": false,
-        "hasCerts": false
+        "hasCerts": true
       },
       "Capstone": {
         "name": "Culinary II",
         "description": "This course prepares the student to work in the food service industry. The program prepares students with food production, preparation and service skills for employment in institutional, commercial or independently owned food establishments or other food and hospitality industry occupations. Instruction includes topics such as planning, selecting, storing, purchasing, preparing, testing, serving and selling of quality food and food products. Students are expected to meet a higher level of performance in the quantity and quality of their assigned work. The students will learn intermediate level skills, both theoretical and practical, performed in the dining room and kitchen restaurant operations. Teaching methods include demonstration, laboratory and textbook work. Training areas covered in this course will include food service facilities and equipment; quality food purchasing and costing; health and safety regulations and practices; skills in food preparation and service and practical experience in such food service jobs. Integrated throughout the course are career preparation standards, which include basic academic skills, communication, interpersonal skills, problem solving, safety technology and other employment skills. The full Serve-Safe curriculum and certification is a major emphasis of this course. State law dictates every food facility must have one or more certified employee.",
         "prerequisites": ["Business Management I"],
-        "isDualEnrollment": true,
+        "isDualEnrollment": false,
         "isCTSO": false,
-        "hasCerts": false
+        "hasCerts": true
       }
     }
   },"Manufacturing & Product Development": {
@@ -206,7 +206,7 @@
         "name": "Commercial Art I",
         "description": "Commercial Art is the first concentrator course in the commercial art CTE-AME Pathway (Media Arts). The Commercial Art I is designed to enable students to achieve digital arts literacy as a distinct, stand-alone arts discipline, whose basic categories include the following areas: photography, imaging, sound, animation, video, web design, graphic design, virtual design, interactive design. Curriculum is based on the 2019 California VAPA and CTE AME Standards. Successful completion of this class satisfies MVHS graduation requirements in art and UC/CSU A-G (f) admission requirements and offers college credit and a GPA bump through dual-enrollment with Foothill College. Historical periods and artists are compared and contrasted through reading, writing, and computer – based activities. Aesthetic valuing and criticism are infused within the curriculum through verbal and written critique of student work and the artwork of professional and historical artists.",
         "prerequisites": [],
-        "isDualEnrollment": false,
+        "isDualEnrollment": true,
         "isCTSO": false,
         "hasCerts": false
       },
@@ -214,7 +214,7 @@
         "name": "Commercial Art II",
         "description": "This course is the Capstone course in the commercial art CTE pathway that  offers college credit and a GPA bump through dual-enrollment with Foothill College. Emphasis is on the commercial applications of art to graphic design and illustration, video and photography, and 3D printing. Students study design basics and advanced skills as preparation for careers through the history of art and design, analysis, interpretation and critiques. Students use a variety of techniques ranging from handmade methods including screen printing to using software including Adobe Photoshop and Illustrator and 3D software such as Fusion 360 and Cura.",
         "prerequisites": ["Commercial Art I"],
-        "isDualEnrollment": false,
+        "isDualEnrollment": true,
         "isCTSO": false,
         "hasCerts": false
       }

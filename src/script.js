@@ -212,19 +212,19 @@ function generateTextBoxForPathway(pathway) {
     if (typeof pathway === 'object') {
         for (const key in pathway) {
             if (key === 'name') {
-                content += `<p><strong>${pathway[key]}`;
+                content += `<p><strong class="mr-2">${pathway[key]}</strong>`;
                 // Add icons for boolean variables
                 if (pathway.isDualEnrollment) {
-                    content += ' <i class="fa-solid fa-circle-check"></i>';
+                    content += '<img src="icons/dual-enrollment.svg" alt="Dual Enrollment" class="icon inline h-4 w-4 mx-0.5" title="Dual Enrollment">';
                 }
                 if (pathway.isCTSO) {
-                    content += ' <i class="fa-solid fa-circle-check"></i>';
+                    content += '<img src="icons/ctso.svg" alt="CTSO" class="icon inline h-4 w-4 mx-0.5" title="CTSO">';
                 }
                 if (pathway.hasCerts) {
-                    content += ' <i class="fa-solid fa-circle-check"></i>';
+                    content += '<img src="icons/certifications.svg" alt="Certifications" class="icon inline h-4 w-4 mx-0.5" title="Certifications">';
                 }
-                content += `</strong><br><br></p>`;
-            } else {
+                content += `<br><br></p>`;
+            } else if (typeof pathway[key] === 'string'){
                 content += `<p>${pathway[key]}<br></p>`;
             }
         }
