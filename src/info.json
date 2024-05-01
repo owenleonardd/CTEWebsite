@@ -5,13 +5,11 @@
     "Images": []
   },
   "About": {
-    "Type": "Category",
-    "Description": "This is the about page.",
-    "How are CTE classes Unique?": "&#8226 They offer a  high-quality  CTE curriculum  and instruction  aligned to the  CTE Model  Curriculum  Standards. <br>&#8226 Provide career exploration and guidance opportunities for all pathway learners. <br>&#8226 Advisory Committee meetings provide input to the CTE  programs and curriculum. <br>&#8226 Provide pathways for students to gain access to internships, and work-based learning (WBL) <u>opportunities for industry</u>. <br>&#8226 Provide opportunities for students to participate in after school and out-of school activities and competitions. These programs create a “family atmosphere” and strong peer relationships opportunities for students. <br>&#8226 If dual enrolled, potentially can provide more college credits than AP classes with no exam.",
-    "Images": ["images/mvhspathway.png"],
-    "Contact": {
-      "Description": "This is the contact page."
-    }
+    "Description": "<span style='font-size: 20px;'><strong>About</strong></span><br><br> CTE classes are rigorous courses that are part of a career pathway, which enhance students’ educational depth of knowledge and career options by preparing them to be college and career ready through exposure to a variety of specialized training(s), enhanced exploration opportunities, and connection to industry experts.",
+    "What is Dual Enrollment?": "<span style='font-size: 20px;'><strong>What is Dual Enrollment?</strong></span><br><br> Dual Enrollment offers students the opportunity to earn both high school and college credit concurrently by taking a high school class during regular school hours, typically taught by their high school teacher. If they achieve a grade of C or higher, they can earn transferable credits for California State University (CSU) and/or University of California (UC) systems. Within the MVLA district, the College and Career Advancement Pathways (CCAP) agreement is with Foothill College, facilitating this dual credit arrangement. Currently, there are three Career Technical Education (CTE) pathways district-wide that provide dual credit, with ongoing efforts to expand the range of available pathways.",
+    "What are Certifications?": "<span style='font-size: 20px;'><strong>What are Certifications?</strong></span><br><br> Certifications are industry-recognized credentials that validate the knowledge and skills required to perform a specific job. They are typically earned through a certification program, which may be offered by a professional organization, a vendor, or a university. Certifications are usually earned from a professional society, university, or a company that specializes in a particular field or technology. They are a way to show employers that you have the skills and knowledge to do the job. Certifications can be earned in a variety of fields, including technology, healthcare, business, and more.",
+    "Contact": "<span style='font-size: 20px;'><strong>Contacts</strong></span><br><br> Brendan Dilloughery, Dept. Coordinator<br>brendan.dilloughery@mvla.net <br><br>Stephen Hine, Dept. Coordinator, <br>stephen.hine@mvla.net<br><br>Michael Moul, Digital Communications Pathway and Culinary Pathway Teacher, <br>michael.moul@mvla.net",
+    "Images": ["images/mvhspathway.png","images/lahspathway.png"]
   },
   "Engineering Architecture": {
     "Type": "Category",
@@ -276,8 +274,8 @@
   },
   "Work Experience Exploration": {
     "Type": "Category",
-    "Description": "This is the Work Experience Exploration category.",
-    "Work Experience Exploration": {
+    "Description": "The Work Experience Education (WEE) curriculum functions as an all-encompassing educational endeavor. Fundamentally, the WEE program aims to connect professional domains with academic curricula, promoting a seamless transition from education to job paths. It also aims to develop a strong skill set, positive habits, and attitudes that support success in a variety of work environments. For students starting their career exploration journey, the program acts as a beacon of guidance, enabling meaningful meetings with potential employers to create partnerships that will benefit both parties. Finally, the WEE program is dedicated to developing a strong work ethic and honing relevant job-related competencies through immersion experiences in real-world work environments, giving students the tools they need to succeed in the ever-changing workforce.",
+    "WEE": {
       "Concentrator": {
         "name": "Work Experience Exploration",
         "description": "Students must be eligible for a Work Permit to participate in this course. Work Experience Education is designed to support students who are working at a job that pays at least minimum wage to earn Elective credits for their Work Experience. Students will need to submit pay stubs regularly to show proof of employment and meet academic requirements to maintain a work permit. The Work Experience Instructor will be contacting employers regularly to ensure students are meeting all professional standards. Students will maintain a professional portfolio to demonstrate their learning from the job experience.",

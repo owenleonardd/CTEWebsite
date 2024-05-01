@@ -41,7 +41,7 @@ async function generateSidebar() {
             console.log("pathways: ", pathways);
             Object.keys(pathways).forEach(pathway => {
                 // Check if the value corresponding to the key is an object
-                if (!Array.isArray(pathways[pathway]) && typeof pathways[pathway] === 'object' && pathways[pathway] !== null) {
+                if (!Array.isArray(pathways[pathway]) && typeof pathways[pathway] === 'object' && pathways[pathway] !== null && !(pathway === 'Concentrator' || pathway === 'Capstone')) {
                     const pathwayButton = document.createElement('li');
                     pathwayButton.innerHTML = `<a href="#" onclick="displayInfoPage('${category}','${pathway}')" class="block px-8 py-2 rounded-lg my-2 hover:bg-gray-200">${replaceHyphensWithSpaces(pathway)}</a>`;
                     pathwaysList.appendChild(pathwayButton);
@@ -76,14 +76,6 @@ async function generateSidebar() {
         console.error('Error:', error);
     }
 }
-
-
-
-
-
-
-
-
 
 
 function togglePathways(category, pathways) {
@@ -199,7 +191,7 @@ function generateInfoContent(info, categoryName) {
     } else {
         // Iterate through all keys and generate text boxes
         for (const key in info) {
-            if((info['Type'] === 'Category' )&&(key !== 'Type' && typeof info[key] === 'string')){
+            if((info['Type'] === 'Category')&&(key !== 'Type' && typeof info[key] === 'string')){
                 console.log(info)
                 content += generateTextBox(`<span style='font-size: 20px;'><strong>${categoryName.replace(/-/g, ' ')}</strong></span><br><br>` + info[key]);
             }else if (key !== 'Type' && typeof info[key] === 'string') {
