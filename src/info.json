@@ -1,11 +1,13 @@
 {
   "Home": {
     "Type": "Home",
-    "Description": "<span style='font-size: 20px;'><strong>What is CTE?</strong></span> <br><br>Career Technical Education classes give students an opportunity to explore specific career pathways while discovering the real-world application of the knowledge and skills learned in core subjects. Career Technical Education classes also deeply expose students in practical skills, problem solving, creativity, and team building. These \"soft\" skills are the skills the current job market and industry demands of future applicants to be competitive in today's global workplace.<br><br>In Career Technical Education classes, students use math to design buildings, build sets, build robots, and create code. They use artistic skills to prepare meals, design cities, create graphics, web designs and presentations from films to theater productions.  They use reading and writing skills to produce multimedia publications, evaluate architectural styles, and develop storylines for student-produced videos. They use science to solve ecological problems and plan sustainable cities and resources of the future. They study history, and use what we have learned from our past, to plan for our future.  Career and Technical Education classes are the future. One size does not fit all, and we have to answer the demand of our community and industry to produce the job force that is needed in the 21st century.<br><br>While many of our Career Technical Education programs may provide students options for entry level employment, most students complete Career Technical Education courses with an understanding of the next steps they need to take on their career paths, whether it is continuing on to college for a degree or job-related certificate or applying to local apprenticeship programs where they can master a craft as they earn a living.<br><br>MVLA CTE programs and services allow all students to graduate from high school prepared to succeed in the workplace and at the post secondary level. With a varied set of program offerings, Career Technical Education classes prepare students to be successful in life after high school."
+    "Description": "<span style='font-size: 20px;'><strong>What is CTE?</strong></span> <br><br>Career Technical Education classes give students an opportunity to explore specific career pathways while discovering the real-world application of the knowledge and skills learned in core subjects. Career Technical Education classes also deeply expose students in practical skills, problem solving, creativity, and team building. These \"soft\" skills are the skills the current job market and industry demands of future applicants to be competitive in today's global workplace.<br><br>In Career Technical Education classes, students use math to design buildings, build sets, build robots, and create code. They use artistic skills to prepare meals, design cities, create graphics, web designs and presentations from films to theater productions.  They use reading and writing skills to produce multimedia publications, evaluate architectural styles, and develop storylines for student-produced videos. They use science to solve ecological problems and plan sustainable cities and resources of the future. They study history, and use what we have learned from our past, to plan for our future.  Career and Technical Education classes are the future. One size does not fit all, and we have to answer the demand of our community and industry to produce the job force that is needed in the 21st century.<br><br>While many of our Career Technical Education programs may provide students options for entry level employment, most students complete Career Technical Education courses with an understanding of the next steps they need to take on their career paths, whether it is continuing on to college for a degree or job-related certificate or applying to local apprenticeship programs where they can master a craft as they earn a living.<br><br>MVLA CTE programs and services allow all students to graduate from high school prepared to succeed in the workplace and at the post secondary level. With a varied set of program offerings, Career Technical Education classes prepare students to be successful in life after high school.",
+    "Images": []
   },
   "About": {
     "Type": "About",
     "Description": "This is the about page.",
+    "Images": ["images/mvhspathway.png"],
     "Contact": {
       "Description": "This is the contact page."
     },
@@ -15,7 +17,7 @@
   },
   "Engineering Architecture": {
     "Type": "Category",
-    "Description": "This is the Engineering Architecture category.",
+    "Description": "This sector is designed to provide a foundation in engineering and architecture sector pathways and occupations for students in California. Students are engaged in an instructional program that integrates academic and technical preparation and focuses on career awareness, career exploration, and career preparation in four pathways that emphasize real-world, occupationally relevant experiences of significant scope and depth: Architectural Design; Engineering Technology; Engineering Design; and Environmental Engineering. To prepare students for continued training, advanced educational opportunities, and direct entry to a career, the Engineering and Architecture programs offer the following components: classroom, laboratory, and hands-on contextual learning; project- and work-based instruction; and leadership and interpersonal skills development.",
     "Engineering Technology": {
       "Concentrator": {
         "name": "Engineering Technology I",
@@ -73,7 +75,7 @@
   },
   "Information and Communication Technology": {
     "Type": "Category",
-    "Description": "This is the Information and Communication Technology category.",
+    "Description": "Information and Communication Technologies (ICT) have expanded the need for employees who can understand, manage, and support all rapidly emerging, evolving, and converging computer, software, networking, telecommunications, Internet, programming, and information systems. Essential skills for careers in the ICT sector include understanding systems that support the management and flow of data, the ability to work well and communicate clearly with people, and the ability to manage projects efficiently. The ICT sector meets national criteria for high demand, high wages, and high skills and provides students with excellent opportunities for interesting work and good pay. More than 70 percent of jobs in this sector will require a bachelor’s degree or higher by 2018.",
     "Software and Systems Developer": {
       "Concentrator": {
         "name": "AP Computer Science",
@@ -113,7 +115,7 @@
   },
   "Health Science and Medical Technology": {
     "Type": "Category",
-    "Description": "This is the Health Science and Medical Technology category.",
+    "Description": "The standards in this sector represent the academic and technical skills and knowledge students need to pursue a full range of career opportunities in health science and medical technology, from entry level to management as well as technical and professional career specialties. The standards describe what workers need to know and be able to do to contribute to the delivery of safe and effective health care. The six career pathways are grouped into functions that have a common purpose and require similar attributes. The pathways are Biotechnology, Patient Care, Health Care Administrative Services, Health Care Operational Support Services, Public and Community Health, and Mental and Behavioral Health. Standards for each career path build on and continue the anchor standards with more complexity, rigor, and career specificity.",
     "Patient Care": {
       "Concentrator": {
         "name": "Health Careers I",
@@ -135,7 +137,7 @@
   },
   "Business and Finance": {
     "Type": "Category",
-    "Description": "This is the Business and Finance category.",
+    "Description": "Persons trained in fields such as business management, international trade, and various financial services specialties (e.g., accounting, banking, and investing) will find that their skills are highly marketable. Students master basic business principles and procedures before proceeding to the career path specializations. The specializations emphasize concepts of accounting and finance, including computer applications, taxes, investments, and asset management as well as pathways in international business and business management. Because almost every business and organization has a financial and management component, students will find that opportunities exist in many career paths in addition to those in business and finance.",
     "Business Management": {
       "Concentrator": {
         "name": "Business Management I",
@@ -157,7 +159,7 @@
   },
   "Hospitality, Tourism, and Recreation": {
     "Type": "Category",
-    "Description": "This is the Business and Finance category.",
+    "Description": "The Hospitality, Tourism, and Recreation sector provides students with the academic and technical preparation necessary to pursue high-skill, high-demand careers in these related and growing industries. The sector encompasses three distinct, yet interrelated, career pathways: Food Science, Dietetics, and Nutrition; Food Service and Hospitality; and Hospitality, Tourism, and Recreation. The standards are designed to integrate academic and career technical concepts. The anchor standards include Consumer and Family Studies comprehensive technical knowledge and skills that prepare students for learning in the pathways. The knowledge and skills are acquired within a sequential, standards-based pathway program that integrates hands-on projects, work-based instruction, and leadership development such as that offered through Family, Career and Community Leaders of America (FCCLA). Standards in this sector are designed to prepare students for technical training, postsecondary education, and entry to a career.",
     "Food Service Hospitality": {
       "Concentrator": {
         "name": "Culinary I",
@@ -178,7 +180,7 @@
     }
   },"Manufacturing & Product Development": {
     "Type": "Category",
-    "Description": "This is the Arts Media and Entertainment category.",
+    "Description": "The Manufacturing and Product Development sector provides a foundation for secondary students in California in manufacturing processes and systems, including graphic design production, machine tooling and forming, welding and materials joining, and product innovation and design. Students engage in an instructional program that integrates academic and technical preparation and focuses on career awareness, career exploration, and skill preparation in four pathways. The pathways emphasize real-world, occupationally relevant experiences of significant scope and depth in manufacturing. The knowledge and skills are acquired within a sequential, standards-based pathway program that integrates hands-on, project-based, and work-based instruction. Standards in this sector are designed to prepare students for entry to a career, postsecondary education, or advanced technical training.",
     "Product Innovation & Design": {
       "Concentrator": {
         "name": "Design and Prototype",
@@ -198,9 +200,9 @@
       }
     }
   },
-  "Arts Media and Entertainment": {
+  "Arts, Media, and Entertainment": {
     "Type": "Category",
-    "Description": "This is the Arts Media and Entertainment category.",
+    "Description": "Of all the career industries, the Arts, Media, and Entertainment sector requires perhaps the greatest cross-disciplinary interaction because the work in this sector has a propensity to be largely project-based, requiring both independent work and interdependent management skills for career success. New technologies are also constantly reshaping the boundaries and skill sets of many arts career pathways. Consequently, core arts-sector occupations demand constantly varying combinations of artistic imagination, metaphoric representation, symbolic connections, and technical skills. Successful career preparation involves both broad and in-depth academic and technical preparation as well as the cultivation of twenty-first-century skill assets, such as flexibility, problem-solving abilities, and interpersonal skills. Careers in the Arts, Media, and Entertainment sector fall into four general pathways: Design, Visual, and Media Arts; Performing Arts; Production and Managerial Arts; and Game Design and Integration. The anchor and pathway standards make explicit the appropriate knowledge, skills, and practical experience students should have in order to pursue their chosen profession, whether that profession requires postsecondary education, graduate training, or apprenticeship.<br><br>Learning the skills and knowledge for creating, refining, and sharing work in the Arts, Media, and Entertainment industry sector promotes teamwork, communication, creative thinking, and decision-making abilities—traits that are necessary to function successfully in the competitive and media-rich twenty-first century. Through the manipulation of sight, sound, and motion, those choosing a pathway from this sector reach out in unique ways to enhance the quality of life for those around them.",
     "Commercial Art": {
       "Concentrator": {
         "name": "Commercial Art I",

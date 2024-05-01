@@ -161,7 +161,7 @@ async function displayInfoPage(categoryName, keyName = '') {
             return;
         }
 
-        const content = generateInfoContent(info);
+        const content = generateInfoContent(info, categoryName);
         displayContent(content);
 
     } catch (error) {
@@ -180,7 +180,7 @@ function getCategoryInfo(parsedInfo, categoryName, keyName) {
             return parsedInfo[categoryName][keyName];
         } else {
             // If keyName is blank, return the entire category object
-            console.log(parsedInfo[categoryName]);
+            console.log("returning entire category:",parsedInfo[categoryName]);
             return parsedInfo[categoryName];
         }
     }
@@ -188,7 +188,7 @@ function getCategoryInfo(parsedInfo, categoryName, keyName) {
 }
 
 
-function generateInfoContent(info) {
+function generateInfoContent(info, categoryName) {
     let content = '';
 
     // Check if the info represents a category with Concentrator and Capstone objects
@@ -198,8 +198,15 @@ function generateInfoContent(info) {
     } else {
         // Iterate through all keys and generate text boxes
         for (const key in info) {
-            if (key !== 'Type' && typeof info[key] === 'string') {
+            if((info['Type'] === 'Category' )&&(key !== 'Type' && typeof info[key] === 'string')){
+                console.log(info)
+                content += generateTextBox(`<span style='font-size: 20px;'><strong>${categoryName.replace(/-/g, ' ')}</strong></span><br><br>` + info[key]);
+            }else if (key !== 'Type' && typeof info[key] === 'string') {
                 content += generateTextBox(info[key]);
+            } else if(key === 'Images') {
+                for (const image of info[key]) {
+                    content += generateTextBoxForImage(image, "");
+                }
             }
         }
     }
@@ -208,6 +215,7 @@ function generateInfoContent(info) {
 }
 
 function generateTextBoxForPathway(pathway) {
+    console.log("generateTextBoxForPathway called with pathway: ", pathway)
     let content = '<div class="border rounded-lg p-4 bg-white my-4">';
     if (typeof pathway === 'object') {
         for (const key in pathway) {
@@ -235,6 +243,23 @@ function generateTextBoxForPathway(pathway) {
     return content;
 }
 
+function generateTextBoxForImage(image, headerText) {
+    if(headerText === undefined) {
+        headerText = "";
+    }
+    // if(image === "images/mvhspathway.png") {
+    //     headerText = "MVHS Pathways";
+    // } else if(image === "images/lahspathway.png") {
+    //     headerText = "LAHS Pathways";
+    // }
+    return `
+        <div class="border rounded-lg p-4 bg-white my-4">
+            <h2 class="text-5xl text-center">${headerText}</h2>
+            <img src="${image}" alt="Image" class="w-full">
+        </div>
+    `;
+
+}
 
 
 
