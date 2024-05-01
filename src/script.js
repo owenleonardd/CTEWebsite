@@ -38,9 +38,10 @@ async function generateSidebar() {
             categoryContainer.appendChild(pathwaysList);
 
             // Populate the pathways list with pathway buttons
+            console.log("pathways: ", pathways);
             Object.keys(pathways).forEach(pathway => {
                 // Check if the value corresponding to the key is an object
-                if (typeof pathways[pathway] === 'object' && pathways[pathway] !== null) {
+                if (!Array.isArray(pathways[pathway]) && typeof pathways[pathway] === 'object' && pathways[pathway] !== null) {
                     const pathwayButton = document.createElement('li');
                     pathwayButton.innerHTML = `<a href="#" onclick="displayInfoPage('${category}','${pathway}')" class="block px-8 py-2 rounded-lg my-2 hover:bg-gray-200">${replaceHyphensWithSpaces(pathway)}</a>`;
                     pathwaysList.appendChild(pathwayButton);

@@ -5,14 +5,12 @@
     "Images": []
   },
   "About": {
-    "Type": "About",
+    "Type": "Category",
     "Description": "This is the about page.",
+    "How are CTE classes Unique?": "&#8226 They offer a  high-quality  CTE curriculum  and instruction  aligned to the  CTE Model  Curriculum  Standards. <br>&#8226 Provide career exploration and guidance opportunities for all pathway learners. <br>&#8226 Advisory Committee meetings provide input to the CTE  programs and curriculum. <br>&#8226 Provide pathways for students to gain access to internships, and work-based learning (WBL) <u>opportunities for industry</u>. <br>&#8226 Provide opportunities for students to participate in after school and out-of school activities and competitions. These programs create a “family atmosphere” and strong peer relationships opportunities for students. <br>&#8226 If dual enrolled, potentially can provide more college credits than AP classes with no exam.",
     "Images": ["images/mvhspathway.png"],
     "Contact": {
       "Description": "This is the contact page."
-    },
-    "FAQ": {
-      "Description": "This is the FAQ page."
     }
   },
   "Engineering Architecture": {
